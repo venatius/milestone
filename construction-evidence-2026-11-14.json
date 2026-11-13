@@ -1,0 +1,84 @@
+{
+  "sources": {
+    "permits": ["Dubai Municipality · Building permit procedures", "https://www.dm.gov.ae/municipality-business/building-permit-steps/"],
+    "inspections": ["Dubai Municipality · Building inspection circulars", "https://www.dm.gov.ae/building-planning-circulars-2/"],
+    "dld": ["DLD · Project Status Enquiry", "https://dubailand.gov.ae/en/eservices/real-estate-project-status-landing"],
+    "villa": ["Nakheel · Palm Jebel Ali construction update", "https://www.nakheel.com/en/construction-progress/palm-jebel-ali"],
+    "palmAugust": ["Nakheel · Palm Jebel Ali August update", "https://www.nakheel.com/en/media-centre/press-releases/news-detail/2026/08/20/nakheel-unveils-limited-collection-of-44-beachfront-villas-on-palm-jebel-ali-s-frond-f"],
+    "como": ["Nakheel · Como Residences construction update", "https://www.nakheel.com/en/construction-progress/como-residences"],
+    "naya": ["Nakheel · Naya at District One construction update", "https://www.nakheel.com/en/construction-progress/naya-at-district-one"],
+    "villageWorks": ["Nakheel · Jebel Ali Village contractor appointment", "https://www.nakheel.com/en/media-centre/press-releases/news-detail/2023/04/06/nakheel-appoints-contractors-for-jebel-ali-village-construction"],
+    "village": ["Nakheel · Jebel Ali Village handovers", "https://www.nakheel.com/en/media-centre/press-releases/news-detail/2026/08/17/nakheel-begins-handover-of-892-homes-at-jebel-ali-village"],
+    "mallWorks": ["Emaar · Dubai Hills Mall construction update", "https://ma.emaar.com/en/press-release-listing/dubai-hills-mall-coming-to-life-with-on-schedule-progress-in-construction-and-innovative-sustainability-features/"],
+    "mall": ["Emaar · Dubai Hills Mall opening", "https://communities.emaar.com/en/news-details/?news_id=16470"]
+  },
+  "profiles": {
+    "Apartment": {
+      "sources": ["permits", "inspections", "como", "naya", "dld"],
+      "milestones": [
+        ["Site preparation and excavation", "Grading or excavation can be visible. Confirm the footprint and excavation date with a site record."],
+        ["Substructure", "Piles, foundations and basements as applicable. Use inspection records to establish completion."],
+        ["Superstructure", "Structural frame and slabs. The visible footprint can change while the number of completed floors remains uncertain."],
+        ["Roof and façade", "Exterior enclosure. Use a dated façade or roof inspection to confirm scope and completion."],
+        ["Building services and internal finishes", "Mechanical, electrical and plumbing (MEP), lifts and interiors. Use contractor or consultant reports."],
+        ["Testing, certification and handover", "Keep commissioning records, the building completion certificate and unit handover as separate milestones."]
+      ]
+    },
+    "Villa": {
+      "sources": ["permits", "inspections", "villa"],
+      "milestones": [
+        ["Setting out and excavation", "Use a surveyed plot and dated site record to identify the individual villa."],
+        ["Substructure", "Foundations and below-ground works. Confirm with the applicable inspection."],
+        ["Superstructure and roof", "Above-ground structure and roof coverage. Use close imagery or inspection for the individual unit."],
+        ["Building services and finishes", "MEP, internal finishes and exterior finishes can overlap. Confirm by unit and work package."],
+        ["External works", "Driveway, paths, landscaping and boundary walls where applicable."],
+        ["Testing, certification and handover", "Use unit-specific signoffs and handover records."]
+      ]
+    },
+    "Villa community": {
+      "sources": ["villageWorks", "village", "villa"],
+      "milestones": [
+        ["Enabling works and grading", "Clearance, grading and access can be assessed across a verified phase."],
+        ["Roads and utility infrastructure", "Track visible road alignment separately from buried utilities and service commissioning."],
+        ["Residential construction by phase", "Track villa plots or clusters individually. Foundation, structure and finishes may overlap across phases."],
+        ["Public realm and amenities", "Track parks, paths and amenities separately from home delivery."],
+        ["Phased handover", "Track which phase has begun handovers and which infrastructure and amenities are still outstanding."]
+      ]
+    },
+    "Mall": {
+      "sources": ["permits", "mallWorks", "mall"],
+      "milestones": [
+        ["Enabling works and substructure", "Track excavation, foundations and applicable basements."],
+        ["Superstructure", "Track main frame and structural steel. A structural progress figure applies to that work package."],
+        ["Roof, skylights and façade", "Compare enclosure and roof extent with dated images and installation records."],
+        ["Building services, common areas and tenant fit-out", "Track landlord and tenant scopes separately. Confirm by package or unit."],
+        ["Testing, certification and opening", "Use commissioning and approval records. Opening can precede some tenant openings."]
+      ]
+    }
+  },
+  "projects": [
+    {"name":"Palm Jebel Ali · Frond F", "type":"Villa", "stage":"Early construction", "events":[
+      ["2026-06-18","RERA inspection reported by Nakheel","Nakheel cites 4.31% for Frond F. The figure covers the frond and cannot be assigned to an individual villa.","villa"],
+      ["2026-08-20","Developer update","Nakheel reports substructure, superstructure, MEP and infrastructure advancing across Fronds A–F.","palmAugust"]
+    ]},
+    {"name":"Como Residences", "type":"Apartment", "stage":"Partial build", "events":[
+      ["2026-07-06","RERA inspection reported by Nakheel","20.88% overall progress, as cited by Nakheel.","como"],
+      ["2026-09-14","Developer inspection","23.02% overall. The work-package table shows 100% substructure and 48.39% superstructure. Façade, services and finishes overlap with structural works.","como"]
+    ]},
+    {"name":"Dubai Hills Mall", "type":"Mall", "stage":"Mid-build example", "events":[
+      [null,"Developer construction update","Emaar reported about 60% of the structure completed, with structural steel and skylight work underway. This is a historical work-package snapshot. The exact publication date was unavailable on the source page.","mallWorks"],
+      ["2022-02-17","Developer opening announcement","The mall opened to the public. Some retailers were still preparing to open.","mall"]
+    ]},
+    {"name":"Naya at District One", "type":"Apartment", "stage":"Structure complete, interiors underway", "events":[
+      ["2026-07-22","RERA inspection reported by Nakheel","56.00% overall, as cited by Nakheel.","naya"],
+      ["2026-09-14","Developer inspection","58.92% overall. Main structural works were complete, with façade, interior finishes, building services and lifts still progressing.","naya"]
+    ]},
+    {"name":"Orchid by Azizi", "type":"Apartment", "stage":"Registry reports finished", "site":"orchid", "registry":"1513", "events":[
+      ["2026-06-15","DLD dataset snapshot","Project 1513 is marked Finished with 100% reported. The completion field is 30 November 2016. The available imagery provides limited construction history.","dld"]
+    ]},
+    {"name":"Jebel Ali Village", "type":"Villa community", "stage":"Phased handover began", "site":"village", "events":[
+      ["2023-04-06","Developer construction update","Nakheel reported contractor appointments and work underway on villas, townhouses and infrastructure.","villageWorks"],
+      ["2026-08-17","Developer handover announcement","Residential handovers began. Nakheel reported residential construction and core infrastructure complete, with some community amenities still to open.","village"]
+    ]}
+  ]
+}
