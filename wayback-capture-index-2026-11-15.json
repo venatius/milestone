@@ -1,0 +1,1177 @@
+{
+  "exploratory": {
+    "centre": [
+      55.14615,
+      25.033904
+    ],
+    "locationSource": null,
+    "failures": 56,
+    "checked": 198,
+    "captures": [
+      {
+        "date": "2011-11-06",
+        "release": "2014-10-01",
+        "zoom": 17,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2014_r15/MapServer/identify?geometry=55.14615%2C25.033904&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13115%2C25.018904%2C55.16115%2C25.048904&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=22692&mapCenter=55.14615%2C25.033904%2C17"
+      },
+      {
+        "date": "2013-07-10",
+        "release": "2017-01-25",
+        "zoom": 17,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2017_r02/MapServer/identify?geometry=55.14615%2C25.033904&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13115%2C25.018904%2C55.16115%2C25.048904&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=9486&mapCenter=55.14615%2C25.033904%2C17"
+      },
+      {
+        "date": "2013-10-01",
+        "release": "2017-01-25",
+        "zoom": 17,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2017_r02/MapServer/identify?geometry=55.14615%2C25.033904&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13115%2C25.018904%2C55.16115%2C25.048904&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=9486&mapCenter=55.14615%2C25.033904%2C17"
+      },
+      {
+        "date": "2016-08-02",
+        "release": "2020-02-20",
+        "zoom": 19,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2020_r03/MapServer/identify?geometry=55.14615%2C25.033904&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13115%2C25.018904%2C55.16115%2C25.048904&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=8495&mapCenter=55.14615%2C25.033904%2C19"
+      },
+      {
+        "date": "2019-01-26",
+        "release": "2020-02-20",
+        "zoom": 17,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2020_r03/MapServer/identify?geometry=55.14615%2C25.033904&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13115%2C25.018904%2C55.16115%2C25.048904&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=8495&mapCenter=55.14615%2C25.033904%2C17"
+      },
+      {
+        "date": "2019-08-29",
+        "release": "2021-01-13",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2021_r01/MapServer/identify?geometry=55.14615%2C25.033904&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13115%2C25.018904%2C55.16115%2C25.048904&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=1049&mapCenter=55.14615%2C25.033904%2C19"
+      },
+      {
+        "date": "2020-09-10",
+        "release": "2021-07-21",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2021_r10/MapServer/identify?geometry=55.14615%2C25.033904&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13115%2C25.018904%2C55.16115%2C25.048904&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=8432&mapCenter=55.14615%2C25.033904%2C19"
+      },
+      {
+        "date": "2021-04-20",
+        "release": "2022-10-12",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2022_r13/MapServer/identify?geometry=55.14615%2C25.033904&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13115%2C25.018904%2C55.16115%2C25.048904&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=44988&mapCenter=55.14615%2C25.033904%2C19"
+      },
+      {
+        "date": "2021-07-07",
+        "release": "2022-06-08",
+        "zoom": 15,
+        "provider": "Maxar",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2022_r07/MapServer/identify?geometry=55.14615%2C25.033904&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13115%2C25.018904%2C55.16115%2C25.048904&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=44710&mapCenter=55.14615%2C25.033904%2C15"
+      },
+      {
+        "date": "2021-09-14",
+        "release": "2023-04-05",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2023_r03/MapServer/identify?geometry=55.14615%2C25.033904&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13115%2C25.018904%2C55.16115%2C25.048904&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=37890&mapCenter=55.14615%2C25.033904%2C19"
+      },
+      {
+        "date": "2022-02-25",
+        "release": "2023-08-10",
+        "zoom": 15,
+        "provider": "Maxar",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2023_r07/MapServer/identify?geometry=55.14615%2C25.033904&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13115%2C25.018904%2C55.16115%2C25.048904&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=17632&mapCenter=55.14615%2C25.033904%2C15"
+      },
+      {
+        "date": "2022-09-21",
+        "release": "2025-01-30",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2025_r01/MapServer/identify?geometry=55.14615%2C25.033904&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13115%2C25.018904%2C55.16115%2C25.048904&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=36557&mapCenter=55.14615%2C25.033904%2C19"
+      },
+      {
+        "date": "2023-02-07",
+        "release": "2024-05-09",
+        "zoom": 15,
+        "provider": "Maxar",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2024_r05/MapServer/identify?geometry=55.14615%2C25.033904&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13115%2C25.018904%2C55.16115%2C25.048904&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=52930&mapCenter=55.14615%2C25.033904%2C15"
+      },
+      {
+        "date": "2024-01-22",
+        "release": "2025-06-26",
+        "zoom": 15,
+        "provider": "Maxar",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2025_r06/MapServer/identify?geometry=55.14615%2C25.033904&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13115%2C25.018904%2C55.16115%2C25.048904&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=48925&mapCenter=55.14615%2C25.033904%2C15"
+      },
+      {
+        "date": "2024-04-19",
+        "release": "2025-10-23",
+        "zoom": 19,
+        "provider": "Vantor",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2025_r10/MapServer/identify?geometry=55.14615%2C25.033904&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13115%2C25.018904%2C55.16115%2C25.048904&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=20512&mapCenter=55.14615%2C25.033904%2C19"
+      },
+      {
+        "date": "2025-03-07",
+        "release": "2026-01-29",
+        "zoom": 15,
+        "provider": "Vantor",
+        "resolution": "0.34",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2026_r01/MapServer/identify?geometry=55.14615%2C25.033904&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13115%2C25.018904%2C55.16115%2C25.048904&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=22252&mapCenter=55.14615%2C25.033904%2C15"
+      },
+      {
+        "date": "2025-05-13",
+        "release": "2026-02-26",
+        "zoom": 19,
+        "provider": "Vantor",
+        "resolution": "0.34",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2026_r02/MapServer/identify?geometry=55.14615%2C25.033904&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13115%2C25.018904%2C55.16115%2C25.048904&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=64001&mapCenter=55.14615%2C25.033904%2C19"
+      },
+      {
+        "date": "2025-11-23",
+        "release": "2026-10-29",
+        "zoom": 19,
+        "provider": "Vantor",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2026_r10/MapServer/identify?geometry=55.14615%2C25.033904&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13115%2C25.018904%2C55.16115%2C25.048904&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=43291&mapCenter=55.14615%2C25.033904%2C19"
+      }
+    ]
+  },
+  "verdes": {
+    "centre": [
+      55.3758125,
+      25.0798125
+    ],
+    "locationSource": null,
+    "failures": 49,
+    "checked": 198,
+    "captures": [
+      {
+        "date": "2011-11-06",
+        "release": "2014-10-01",
+        "zoom": 17,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2014_r15/MapServer/identify?geometry=55.3758125%2C25.0798125&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.3608125%2C25.0648125%2C55.3908125%2C25.0948125&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=22692&mapCenter=55.3758125%2C25.0798125%2C17"
+      },
+      {
+        "date": "2013-07-10",
+        "release": "2017-01-25",
+        "zoom": 17,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2017_r02/MapServer/identify?geometry=55.3758125%2C25.0798125&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.3608125%2C25.0648125%2C55.3908125%2C25.0948125&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=9486&mapCenter=55.3758125%2C25.0798125%2C17"
+      },
+      {
+        "date": "2013-10-01",
+        "release": "2017-01-25",
+        "zoom": 17,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2017_r02/MapServer/identify?geometry=55.3758125%2C25.0798125&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.3608125%2C25.0648125%2C55.3908125%2C25.0948125&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=9486&mapCenter=55.3758125%2C25.0798125%2C17"
+      },
+      {
+        "date": "2016-08-07",
+        "release": "2020-02-20",
+        "zoom": 19,
+        "provider": "DigitalGlobe",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2020_r03/MapServer/identify?geometry=55.3758125%2C25.0798125&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.3608125%2C25.0648125%2C55.3908125%2C25.0948125&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=8495&mapCenter=55.3758125%2C25.0798125%2C19"
+      },
+      {
+        "date": "2019-02-24",
+        "release": "2020-02-20",
+        "zoom": 17,
+        "provider": "DigitalGlobe",
+        "resolution": "0.46",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2020_r03/MapServer/identify?geometry=55.3758125%2C25.0798125&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.3608125%2C25.0648125%2C55.3908125%2C25.0948125&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=8495&mapCenter=55.3758125%2C25.0798125%2C17"
+      },
+      {
+        "date": "2019-08-29",
+        "release": "2021-01-13",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2021_r01/MapServer/identify?geometry=55.3758125%2C25.0798125&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.3608125%2C25.0648125%2C55.3908125%2C25.0948125&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=1049&mapCenter=55.3758125%2C25.0798125%2C19"
+      },
+      {
+        "date": "2020-09-10",
+        "release": "2021-04-28",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2021_r06/MapServer/identify?geometry=55.3758125%2C25.0798125&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.3608125%2C25.0648125%2C55.3908125%2C25.0948125&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=27659&mapCenter=55.3758125%2C25.0798125%2C19"
+      },
+      {
+        "date": "2021-06-13",
+        "release": "2022-10-12",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.46",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2022_r13/MapServer/identify?geometry=55.3758125%2C25.0798125&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.3608125%2C25.0648125%2C55.3908125%2C25.0948125&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=44988&mapCenter=55.3758125%2C25.0798125%2C19"
+      },
+      {
+        "date": "2022-03-28",
+        "release": "2023-04-05",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.46",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2023_r03/MapServer/identify?geometry=55.3758125%2C25.0798125&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.3608125%2C25.0648125%2C55.3908125%2C25.0948125&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=37890&mapCenter=55.3758125%2C25.0798125%2C19"
+      },
+      {
+        "date": "2022-05-19",
+        "release": "2025-01-30",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2025_r01/MapServer/identify?geometry=55.3758125%2C25.0798125&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.3608125%2C25.0648125%2C55.3908125%2C25.0948125&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=36557&mapCenter=55.3758125%2C25.0798125%2C19"
+      },
+      {
+        "date": "2023-12-03",
+        "release": "2025-06-26",
+        "zoom": 15,
+        "provider": "Maxar",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2025_r06/MapServer/identify?geometry=55.3758125%2C25.0798125&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.3608125%2C25.0648125%2C55.3908125%2C25.0948125&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=48925&mapCenter=55.3758125%2C25.0798125%2C15"
+      },
+      {
+        "date": "2024-10-18",
+        "release": "2025-10-23",
+        "zoom": 19,
+        "provider": "Vantor",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2025_r10/MapServer/identify?geometry=55.3758125%2C25.0798125&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.3608125%2C25.0648125%2C55.3908125%2C25.0948125&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=20512&mapCenter=55.3758125%2C25.0798125%2C19"
+      },
+      {
+        "date": "2025-03-01",
+        "release": "2026-02-26",
+        "zoom": 19,
+        "provider": "Vantor",
+        "resolution": "0.34",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2026_r02/MapServer/identify?geometry=55.3758125%2C25.0798125&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.3608125%2C25.0648125%2C55.3908125%2C25.0948125&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=64001&mapCenter=55.3758125%2C25.0798125%2C19"
+      },
+      {
+        "date": "2025-10-05",
+        "release": "2026-10-29",
+        "zoom": 19,
+        "provider": "Vantor",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2026_r10/MapServer/identify?geometry=55.3758125%2C25.0798125&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.3608125%2C25.0648125%2C55.3908125%2C25.0948125&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=43291&mapCenter=55.3758125%2C25.0798125%2C19"
+      }
+    ]
+  },
+  "orchid": {
+    "centre": [
+      55.1495641,
+      25.0318869
+    ],
+    "locationSource": null,
+    "failures": 49,
+    "checked": 198,
+    "captures": [
+      {
+        "date": "2011-11-06",
+        "release": "2014-10-01",
+        "zoom": 17,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2014_r15/MapServer/identify?geometry=55.1495641%2C25.0318869&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.1345641%2C25.0168869%2C55.1645641%2C25.0468869&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=22692&mapCenter=55.1495641%2C25.0318869%2C17"
+      },
+      {
+        "date": "2013-07-10",
+        "release": "2017-01-25",
+        "zoom": 17,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2017_r02/MapServer/identify?geometry=55.1495641%2C25.0318869&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.1345641%2C25.0168869%2C55.1645641%2C25.0468869&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=9486&mapCenter=55.1495641%2C25.0318869%2C17"
+      },
+      {
+        "date": "2013-10-01",
+        "release": "2017-01-25",
+        "zoom": 17,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2017_r02/MapServer/identify?geometry=55.1495641%2C25.0318869&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.1345641%2C25.0168869%2C55.1645641%2C25.0468869&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=9486&mapCenter=55.1495641%2C25.0318869%2C17"
+      },
+      {
+        "date": "2016-08-02",
+        "release": "2020-02-20",
+        "zoom": 19,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2020_r03/MapServer/identify?geometry=55.1495641%2C25.0318869&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.1345641%2C25.0168869%2C55.1645641%2C25.0468869&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=8495&mapCenter=55.1495641%2C25.0318869%2C19"
+      },
+      {
+        "date": "2019-01-26",
+        "release": "2020-02-20",
+        "zoom": 17,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2020_r03/MapServer/identify?geometry=55.1495641%2C25.0318869&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.1345641%2C25.0168869%2C55.1645641%2C25.0468869&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=8495&mapCenter=55.1495641%2C25.0318869%2C17"
+      },
+      {
+        "date": "2019-08-29",
+        "release": "2021-01-13",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2021_r01/MapServer/identify?geometry=55.1495641%2C25.0318869&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.1345641%2C25.0168869%2C55.1645641%2C25.0468869&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=1049&mapCenter=55.1495641%2C25.0318869%2C19"
+      },
+      {
+        "date": "2020-09-10",
+        "release": "2021-10-13",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2021_r14/MapServer/identify?geometry=55.1495641%2C25.0318869&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.1345641%2C25.0168869%2C55.1645641%2C25.0468869&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=16749&mapCenter=55.1495641%2C25.0318869%2C19"
+      },
+      {
+        "date": "2021-04-20",
+        "release": "2022-09-21",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2022_r12/MapServer/identify?geometry=55.1495641%2C25.0318869&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.1345641%2C25.0168869%2C55.1645641%2C25.0468869&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=47471&mapCenter=55.1495641%2C25.0318869%2C19"
+      },
+      {
+        "date": "2021-07-07",
+        "release": "2022-07-21",
+        "zoom": 15,
+        "provider": "Maxar",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2022_r09/MapServer/identify?geometry=55.1495641%2C25.0318869&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.1345641%2C25.0168869%2C55.1645641%2C25.0468869&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=13851&mapCenter=55.1495641%2C25.0318869%2C15"
+      },
+      {
+        "date": "2021-09-14",
+        "release": "2023-04-05",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2023_r03/MapServer/identify?geometry=55.1495641%2C25.0318869&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.1345641%2C25.0168869%2C55.1645641%2C25.0468869&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=37890&mapCenter=55.1495641%2C25.0318869%2C19"
+      },
+      {
+        "date": "2022-02-25",
+        "release": "2023-08-10",
+        "zoom": 15,
+        "provider": "Maxar",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2023_r07/MapServer/identify?geometry=55.1495641%2C25.0318869&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.1345641%2C25.0168869%2C55.1645641%2C25.0468869&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=17632&mapCenter=55.1495641%2C25.0318869%2C15"
+      },
+      {
+        "date": "2022-09-21",
+        "release": "2025-01-30",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2025_r01/MapServer/identify?geometry=55.1495641%2C25.0318869&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.1345641%2C25.0168869%2C55.1645641%2C25.0468869&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=36557&mapCenter=55.1495641%2C25.0318869%2C19"
+      },
+      {
+        "date": "2023-02-07",
+        "release": "2024-05-09",
+        "zoom": 15,
+        "provider": "Maxar",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2024_r05/MapServer/identify?geometry=55.1495641%2C25.0318869&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.1345641%2C25.0168869%2C55.1645641%2C25.0468869&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=52930&mapCenter=55.1495641%2C25.0318869%2C15"
+      },
+      {
+        "date": "2024-01-22",
+        "release": "2025-06-26",
+        "zoom": 15,
+        "provider": "Maxar",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2025_r06/MapServer/identify?geometry=55.1495641%2C25.0318869&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.1345641%2C25.0168869%2C55.1645641%2C25.0468869&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=48925&mapCenter=55.1495641%2C25.0318869%2C15"
+      },
+      {
+        "date": "2024-04-19",
+        "release": "2025-10-23",
+        "zoom": 19,
+        "provider": "Vantor",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2025_r10/MapServer/identify?geometry=55.1495641%2C25.0318869&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.1345641%2C25.0168869%2C55.1645641%2C25.0468869&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=20512&mapCenter=55.1495641%2C25.0318869%2C19"
+      },
+      {
+        "date": "2025-03-07",
+        "release": "2026-01-29",
+        "zoom": 15,
+        "provider": "Vantor",
+        "resolution": "0.34",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2026_r01/MapServer/identify?geometry=55.1495641%2C25.0318869&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.1345641%2C25.0168869%2C55.1645641%2C25.0468869&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=22252&mapCenter=55.1495641%2C25.0318869%2C15"
+      },
+      {
+        "date": "2025-05-13",
+        "release": "2026-02-26",
+        "zoom": 19,
+        "provider": "Vantor",
+        "resolution": "0.34",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2026_r02/MapServer/identify?geometry=55.1495641%2C25.0318869&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.1345641%2C25.0168869%2C55.1645641%2C25.0468869&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=64001&mapCenter=55.1495641%2C25.0318869%2C19"
+      },
+      {
+        "date": "2025-11-23",
+        "release": "2026-10-29",
+        "zoom": 19,
+        "provider": "Vantor",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2026_r10/MapServer/identify?geometry=55.1495641%2C25.0318869&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.1345641%2C25.0168869%2C55.1645641%2C25.0468869&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=43291&mapCenter=55.1495641%2C25.0318869%2C19"
+      }
+    ]
+  },
+  "village": {
+    "centre": [
+      55.117054,
+      25.034937
+    ],
+    "locationSource": null,
+    "failures": 46,
+    "checked": 198,
+    "captures": [
+      {
+        "date": "2011-11-06",
+        "release": "2014-10-01",
+        "zoom": 17,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2014_r15/MapServer/identify?geometry=55.117054%2C25.034937&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.102054%2C25.019937%2C55.132054000000004%2C25.049937&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=22692&mapCenter=55.117054%2C25.034937%2C17"
+      },
+      {
+        "date": "2013-07-10",
+        "release": "2017-01-25",
+        "zoom": 17,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2017_r02/MapServer/identify?geometry=55.117054%2C25.034937&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.102054%2C25.019937%2C55.132054000000004%2C25.049937&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=9486&mapCenter=55.117054%2C25.034937%2C17"
+      },
+      {
+        "date": "2013-10-01",
+        "release": "2017-01-25",
+        "zoom": 17,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2017_r02/MapServer/identify?geometry=55.117054%2C25.034937&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.102054%2C25.019937%2C55.132054000000004%2C25.049937&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=9486&mapCenter=55.117054%2C25.034937%2C17"
+      },
+      {
+        "date": "2016-08-02",
+        "release": "2020-02-20",
+        "zoom": 19,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2020_r03/MapServer/identify?geometry=55.117054%2C25.034937&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.102054%2C25.019937%2C55.132054000000004%2C25.049937&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=8495&mapCenter=55.117054%2C25.034937%2C19"
+      },
+      {
+        "date": "2019-01-26",
+        "release": "2020-02-20",
+        "zoom": 17,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2020_r03/MapServer/identify?geometry=55.117054%2C25.034937&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.102054%2C25.019937%2C55.132054000000004%2C25.049937&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=8495&mapCenter=55.117054%2C25.034937%2C17"
+      },
+      {
+        "date": "2019-08-29",
+        "release": "2021-01-13",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2021_r01/MapServer/identify?geometry=55.117054%2C25.034937&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.102054%2C25.019937%2C55.132054000000004%2C25.049937&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=1049&mapCenter=55.117054%2C25.034937%2C19"
+      },
+      {
+        "date": "2020-09-10",
+        "release": "2021-09-28",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2021_r13/MapServer/identify?geometry=55.117054%2C25.034937&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.102054%2C25.019937%2C55.132054000000004%2C25.049937&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=51313&mapCenter=55.117054%2C25.034937%2C19"
+      },
+      {
+        "date": "2021-07-05",
+        "release": "2022-10-12",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2022_r13/MapServer/identify?geometry=55.117054%2C25.034937&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.102054%2C25.019937%2C55.132054000000004%2C25.049937&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=44988&mapCenter=55.117054%2C25.034937%2C19"
+      },
+      {
+        "date": "2021-07-07",
+        "release": "2022-06-29",
+        "zoom": 15,
+        "provider": "Maxar",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2022_r08/MapServer/identify?geometry=55.117054%2C25.034937&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.102054%2C25.019937%2C55.132054000000004%2C25.049937&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=4905&mapCenter=55.117054%2C25.034937%2C15"
+      },
+      {
+        "date": "2021-09-14",
+        "release": "2023-04-05",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2023_r03/MapServer/identify?geometry=55.117054%2C25.034937&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.102054%2C25.019937%2C55.132054000000004%2C25.049937&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=37890&mapCenter=55.117054%2C25.034937%2C19"
+      },
+      {
+        "date": "2022-02-25",
+        "release": "2023-08-10",
+        "zoom": 15,
+        "provider": "Maxar",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2023_r07/MapServer/identify?geometry=55.117054%2C25.034937&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.102054%2C25.019937%2C55.132054000000004%2C25.049937&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=17632&mapCenter=55.117054%2C25.034937%2C15"
+      },
+      {
+        "date": "2022-09-21",
+        "release": "2025-01-30",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2025_r01/MapServer/identify?geometry=55.117054%2C25.034937&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.102054%2C25.019937%2C55.132054000000004%2C25.049937&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=36557&mapCenter=55.117054%2C25.034937%2C19"
+      },
+      {
+        "date": "2023-02-07",
+        "release": "2024-05-09",
+        "zoom": 15,
+        "provider": "Maxar",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2024_r05/MapServer/identify?geometry=55.117054%2C25.034937&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.102054%2C25.019937%2C55.132054000000004%2C25.049937&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=52930&mapCenter=55.117054%2C25.034937%2C15"
+      },
+      {
+        "date": "2024-01-22",
+        "release": "2025-10-23",
+        "zoom": 19,
+        "provider": "Vantor",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2025_r10/MapServer/identify?geometry=55.117054%2C25.034937&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.102054%2C25.019937%2C55.132054000000004%2C25.049937&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=20512&mapCenter=55.117054%2C25.034937%2C19"
+      },
+      {
+        "date": "2025-03-07",
+        "release": "2026-01-29",
+        "zoom": 15,
+        "provider": "Vantor",
+        "resolution": "0.34",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2026_r01/MapServer/identify?geometry=55.117054%2C25.034937&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.102054%2C25.019937%2C55.132054000000004%2C25.049937&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=22252&mapCenter=55.117054%2C25.034937%2C15"
+      },
+      {
+        "date": "2025-05-13",
+        "release": "2026-02-26",
+        "zoom": 19,
+        "provider": "Vantor",
+        "resolution": "0.34",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2026_r02/MapServer/identify?geometry=55.117054%2C25.034937&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.102054%2C25.019937%2C55.132054000000004%2C25.049937&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=64001&mapCenter=55.117054%2C25.034937%2C19"
+      },
+      {
+        "date": "2025-11-23",
+        "release": "2026-10-29",
+        "zoom": 19,
+        "provider": "Vantor",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2026_r10/MapServer/identify?geometry=55.117054%2C25.034937&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.102054%2C25.019937%2C55.132054000000004%2C25.049937&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=43291&mapCenter=55.117054%2C25.034937%2C19"
+      }
+    ]
+  },
+  "mall": {
+    "centre": [
+      55.23968,
+      25.1016
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/797700047",
+    "failures": 50,
+    "checked": 198,
+    "captures": [
+      {
+        "date": "2011-11-06",
+        "release": "2014-10-01",
+        "zoom": 17,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2014_r15/MapServer/identify?geometry=55.23968%2C25.1016&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.22468%2C25.0866%2C55.25468%2C25.116600000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=22692&mapCenter=55.23968%2C25.1016%2C17"
+      },
+      {
+        "date": "2013-07-10",
+        "release": "2017-01-25",
+        "zoom": 17,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2017_r02/MapServer/identify?geometry=55.23968%2C25.1016&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.22468%2C25.0866%2C55.25468%2C25.116600000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=9486&mapCenter=55.23968%2C25.1016%2C17"
+      },
+      {
+        "date": "2013-10-01",
+        "release": "2017-01-25",
+        "zoom": 17,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2017_r02/MapServer/identify?geometry=55.23968%2C25.1016&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.22468%2C25.0866%2C55.25468%2C25.116600000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=9486&mapCenter=55.23968%2C25.1016%2C17"
+      },
+      {
+        "date": "2016-08-13",
+        "release": "2020-02-20",
+        "zoom": 19,
+        "provider": "DigitalGlobe",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2020_r03/MapServer/identify?geometry=55.23968%2C25.1016&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.22468%2C25.0866%2C55.25468%2C25.116600000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=8495&mapCenter=55.23968%2C25.1016%2C19"
+      },
+      {
+        "date": "2019-01-26",
+        "release": "2020-02-20",
+        "zoom": 17,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2020_r03/MapServer/identify?geometry=55.23968%2C25.1016&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.22468%2C25.0866%2C55.25468%2C25.116600000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=8495&mapCenter=55.23968%2C25.1016%2C17"
+      },
+      {
+        "date": "2019-08-29",
+        "release": "2021-01-13",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2021_r01/MapServer/identify?geometry=55.23968%2C25.1016&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.22468%2C25.0866%2C55.25468%2C25.116600000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=1049&mapCenter=55.23968%2C25.1016%2C19"
+      },
+      {
+        "date": "2020-09-10",
+        "release": "2021-05-19",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2021_r07/MapServer/identify?geometry=55.23968%2C25.1016&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.22468%2C25.0866%2C55.25468%2C25.116600000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=15423&mapCenter=55.23968%2C25.1016%2C19"
+      },
+      {
+        "date": "2021-04-20",
+        "release": "2022-08-31",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2022_r11/MapServer/identify?geometry=55.23968%2C25.1016&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.22468%2C25.0866%2C55.25468%2C25.116600000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=45441&mapCenter=55.23968%2C25.1016%2C19"
+      },
+      {
+        "date": "2021-06-13",
+        "release": "2022-08-10",
+        "zoom": 15,
+        "provider": "Maxar",
+        "resolution": "0.46",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2022_r10/MapServer/identify?geometry=55.23968%2C25.1016&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.22468%2C25.0866%2C55.25468%2C25.116600000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=17825&mapCenter=55.23968%2C25.1016%2C15"
+      },
+      {
+        "date": "2022-03-17",
+        "release": "2023-04-05",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2023_r03/MapServer/identify?geometry=55.23968%2C25.1016&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.22468%2C25.0866%2C55.25468%2C25.116600000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=37890&mapCenter=55.23968%2C25.1016%2C19"
+      },
+      {
+        "date": "2022-03-28",
+        "release": "2023-08-10",
+        "zoom": 15,
+        "provider": "Maxar",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2023_r07/MapServer/identify?geometry=55.23968%2C25.1016&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.22468%2C25.0866%2C55.25468%2C25.116600000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=17632&mapCenter=55.23968%2C25.1016%2C15"
+      },
+      {
+        "date": "2022-10-23",
+        "release": "2025-01-30",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2025_r01/MapServer/identify?geometry=55.23968%2C25.1016&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.22468%2C25.0866%2C55.25468%2C25.116600000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=36557&mapCenter=55.23968%2C25.1016%2C19"
+      },
+      {
+        "date": "2023-01-02",
+        "release": "2024-05-09",
+        "zoom": 15,
+        "provider": "Maxar",
+        "resolution": "0.46",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2024_r05/MapServer/identify?geometry=55.23968%2C25.1016&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.22468%2C25.0866%2C55.25468%2C25.116600000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=52930&mapCenter=55.23968%2C25.1016%2C15"
+      },
+      {
+        "date": "2024-01-22",
+        "release": "2025-06-26",
+        "zoom": 15,
+        "provider": "Maxar",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2025_r06/MapServer/identify?geometry=55.23968%2C25.1016&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.22468%2C25.0866%2C55.25468%2C25.116600000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=48925&mapCenter=55.23968%2C25.1016%2C15"
+      },
+      {
+        "date": "2024-04-19",
+        "release": "2025-10-23",
+        "zoom": 19,
+        "provider": "Vantor",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2025_r10/MapServer/identify?geometry=55.23968%2C25.1016&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.22468%2C25.0866%2C55.25468%2C25.116600000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=20512&mapCenter=55.23968%2C25.1016%2C19"
+      },
+      {
+        "date": "2025-02-20",
+        "release": "2026-01-29",
+        "zoom": 15,
+        "provider": "Vantor",
+        "resolution": "0.34",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2026_r01/MapServer/identify?geometry=55.23968%2C25.1016&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.22468%2C25.0866%2C55.25468%2C25.116600000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=22252&mapCenter=55.23968%2C25.1016%2C15"
+      },
+      {
+        "date": "2025-04-08",
+        "release": "2026-02-26",
+        "zoom": 19,
+        "provider": "Vantor",
+        "resolution": "0.34",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2026_r02/MapServer/identify?geometry=55.23968%2C25.1016&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.22468%2C25.0866%2C55.25468%2C25.116600000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=64001&mapCenter=55.23968%2C25.1016%2C19"
+      },
+      {
+        "date": "2025-11-23",
+        "release": "2026-10-29",
+        "zoom": 19,
+        "provider": "Vantor",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2026_r10/MapServer/identify?geometry=55.23968%2C25.1016&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.22468%2C25.0866%2C55.25468%2C25.116600000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=43291&mapCenter=55.23968%2C25.1016%2C19"
+      }
+    ]
+  },
+  "como": {
+    "centre": [
+      55.14543,
+      25.11116
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/656917025",
+    "failures": 38,
+    "checked": 198,
+    "captures": [
+      {
+        "date": "2011-11-06",
+        "release": "2014-10-01",
+        "zoom": 17,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2014_r15/MapServer/identify?geometry=55.14543%2C25.11116&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13043%2C25.09616%2C55.16043%2C25.126160000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=22692&mapCenter=55.14543%2C25.11116%2C17"
+      },
+      {
+        "date": "2013-07-10",
+        "release": "2017-01-25",
+        "zoom": 17,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2017_r02/MapServer/identify?geometry=55.14543%2C25.11116&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13043%2C25.09616%2C55.16043%2C25.126160000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=9486&mapCenter=55.14543%2C25.11116%2C17"
+      },
+      {
+        "date": "2013-10-01",
+        "release": "2017-01-25",
+        "zoom": 17,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2017_r02/MapServer/identify?geometry=55.14543%2C25.11116&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13043%2C25.09616%2C55.16043%2C25.126160000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=9486&mapCenter=55.14543%2C25.11116%2C17"
+      },
+      {
+        "date": "2013-10-20",
+        "release": "2017-03-29",
+        "zoom": 17,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2017_r06/MapServer/identify?geometry=55.14543%2C25.11116&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13043%2C25.09616%2C55.16043%2C25.126160000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=5205&mapCenter=55.14543%2C25.11116%2C17"
+      },
+      {
+        "date": "2016-08-02",
+        "release": "2020-01-30",
+        "zoom": 19,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2020_r02/MapServer/identify?geometry=55.14543%2C25.11116&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13043%2C25.09616%2C55.16043%2C25.126160000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=21485&mapCenter=55.14543%2C25.11116%2C19"
+      },
+      {
+        "date": "2019-01-26",
+        "release": "2020-01-30",
+        "zoom": 17,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2020_r02/MapServer/identify?geometry=55.14543%2C25.11116&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13043%2C25.09616%2C55.16043%2C25.126160000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=21485&mapCenter=55.14543%2C25.11116%2C17"
+      },
+      {
+        "date": "2019-08-29",
+        "release": "2021-01-13",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2021_r01/MapServer/identify?geometry=55.14543%2C25.11116&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13043%2C25.09616%2C55.16043%2C25.126160000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=1049&mapCenter=55.14543%2C25.11116%2C19"
+      },
+      {
+        "date": "2019-11-26",
+        "release": "2021-12-21",
+        "zoom": 15,
+        "provider": "Maxar",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2021_r17/MapServer/identify?geometry=55.14543%2C25.11116&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13043%2C25.09616%2C55.16043%2C25.126160000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=26120&mapCenter=55.14543%2C25.11116%2C15"
+      },
+      {
+        "date": "2020-09-10",
+        "release": "2021-11-03",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2021_r15/MapServer/identify?geometry=55.14543%2C25.11116&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13043%2C25.09616%2C55.16043%2C25.126160000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=42403&mapCenter=55.14543%2C25.11116%2C19"
+      },
+      {
+        "date": "2021-04-20",
+        "release": "2022-09-21",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2022_r12/MapServer/identify?geometry=55.14543%2C25.11116&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13043%2C25.09616%2C55.16043%2C25.126160000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=47471&mapCenter=55.14543%2C25.11116%2C19"
+      },
+      {
+        "date": "2021-07-07",
+        "release": "2022-08-10",
+        "zoom": 15,
+        "provider": "Maxar",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2022_r10/MapServer/identify?geometry=55.14543%2C25.11116&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13043%2C25.09616%2C55.16043%2C25.126160000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=17825&mapCenter=55.14543%2C25.11116%2C15"
+      },
+      {
+        "date": "2021-09-14",
+        "release": "2023-04-05",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2023_r03/MapServer/identify?geometry=55.14543%2C25.11116&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13043%2C25.09616%2C55.16043%2C25.126160000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=37890&mapCenter=55.14543%2C25.11116%2C19"
+      },
+      {
+        "date": "2022-02-25",
+        "release": "2023-08-10",
+        "zoom": 15,
+        "provider": "Maxar",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2023_r07/MapServer/identify?geometry=55.14543%2C25.11116&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13043%2C25.09616%2C55.16043%2C25.126160000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=17632&mapCenter=55.14543%2C25.11116%2C15"
+      },
+      {
+        "date": "2022-11-03",
+        "release": "2025-01-30",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.46",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2025_r01/MapServer/identify?geometry=55.14543%2C25.11116&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13043%2C25.09616%2C55.16043%2C25.126160000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=36557&mapCenter=55.14543%2C25.11116%2C19"
+      },
+      {
+        "date": "2023-02-07",
+        "release": "2024-05-09",
+        "zoom": 15,
+        "provider": "Maxar",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2024_r05/MapServer/identify?geometry=55.14543%2C25.11116&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13043%2C25.09616%2C55.16043%2C25.126160000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=52930&mapCenter=55.14543%2C25.11116%2C15"
+      },
+      {
+        "date": "2024-01-22",
+        "release": "2025-06-26",
+        "zoom": 15,
+        "provider": "Maxar",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2025_r06/MapServer/identify?geometry=55.14543%2C25.11116&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13043%2C25.09616%2C55.16043%2C25.126160000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=48925&mapCenter=55.14543%2C25.11116%2C15"
+      },
+      {
+        "date": "2024-04-19",
+        "release": "2025-10-23",
+        "zoom": 19,
+        "provider": "Vantor",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2025_r10/MapServer/identify?geometry=55.14543%2C25.11116&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13043%2C25.09616%2C55.16043%2C25.126160000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=20512&mapCenter=55.14543%2C25.11116%2C19"
+      },
+      {
+        "date": "2025-03-07",
+        "release": "2026-01-29",
+        "zoom": 15,
+        "provider": "Vantor",
+        "resolution": "0.34",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2026_r01/MapServer/identify?geometry=55.14543%2C25.11116&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13043%2C25.09616%2C55.16043%2C25.126160000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=22252&mapCenter=55.14543%2C25.11116%2C15"
+      },
+      {
+        "date": "2025-04-08",
+        "release": "2026-02-26",
+        "zoom": 19,
+        "provider": "Vantor",
+        "resolution": "0.34",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2026_r02/MapServer/identify?geometry=55.14543%2C25.11116&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13043%2C25.09616%2C55.16043%2C25.126160000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=64001&mapCenter=55.14543%2C25.11116%2C19"
+      },
+      {
+        "date": "2025-11-23",
+        "release": "2026-10-29",
+        "zoom": 19,
+        "provider": "Vantor",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2026_r10/MapServer/identify?geometry=55.14543%2C25.11116&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.13043%2C25.09616%2C55.16043%2C25.126160000000002&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=43291&mapCenter=55.14543%2C25.11116%2C19"
+      }
+    ]
+  },
+  "naya": {
+    "centre": [
+      55.287229,
+      25.157254
+    ],
+    "locationSource": "https://www.madena.ae/projects/naya",
+    "failures": 43,
+    "checked": 198,
+    "captures": [
+      {
+        "date": "2011-11-06",
+        "release": "2014-10-01",
+        "zoom": 17,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2014_r15/MapServer/identify?geometry=55.287229%2C25.157254&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.272229%2C25.142253999999998%2C55.302229000000004%2C25.172254&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=22692&mapCenter=55.287229%2C25.157254%2C17"
+      },
+      {
+        "date": "2013-07-10",
+        "release": "2017-01-25",
+        "zoom": 17,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2017_r02/MapServer/identify?geometry=55.287229%2C25.157254&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.272229%2C25.142253999999998%2C55.302229000000004%2C25.172254&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=9486&mapCenter=55.287229%2C25.157254%2C17"
+      },
+      {
+        "date": "2013-10-01",
+        "release": "2017-01-25",
+        "zoom": 17,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2017_r02/MapServer/identify?geometry=55.287229%2C25.157254&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.272229%2C25.142253999999998%2C55.302229000000004%2C25.172254&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=9486&mapCenter=55.287229%2C25.157254%2C17"
+      },
+      {
+        "date": "2016-08-13",
+        "release": "2020-02-20",
+        "zoom": 19,
+        "provider": "DigitalGlobe",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2020_r03/MapServer/identify?geometry=55.287229%2C25.157254&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.272229%2C25.142253999999998%2C55.302229000000004%2C25.172254&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=8495&mapCenter=55.287229%2C25.157254%2C19"
+      },
+      {
+        "date": "2019-01-26",
+        "release": "2020-02-20",
+        "zoom": 17,
+        "provider": "DigitalGlobe",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2020_r03/MapServer/identify?geometry=55.287229%2C25.157254&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.272229%2C25.142253999999998%2C55.302229000000004%2C25.172254&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=8495&mapCenter=55.287229%2C25.157254%2C17"
+      },
+      {
+        "date": "2019-08-29",
+        "release": "2021-01-13",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2021_r01/MapServer/identify?geometry=55.287229%2C25.157254&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.272229%2C25.142253999999998%2C55.302229000000004%2C25.172254&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=1049&mapCenter=55.287229%2C25.157254%2C19"
+      },
+      {
+        "date": "2020-09-10",
+        "release": "2021-10-13",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2021_r14/MapServer/identify?geometry=55.287229%2C25.157254&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.272229%2C25.142253999999998%2C55.302229000000004%2C25.172254&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=16749&mapCenter=55.287229%2C25.157254%2C19"
+      },
+      {
+        "date": "2021-06-13",
+        "release": "2022-09-21",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.46",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2022_r12/MapServer/identify?geometry=55.287229%2C25.157254&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.272229%2C25.142253999999998%2C55.302229000000004%2C25.172254&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=47471&mapCenter=55.287229%2C25.157254%2C19"
+      },
+      {
+        "date": "2022-04-05",
+        "release": "2023-08-10",
+        "zoom": 15,
+        "provider": "Maxar",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2023_r07/MapServer/identify?geometry=55.287229%2C25.157254&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.272229%2C25.142253999999998%2C55.302229000000004%2C25.172254&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=17632&mapCenter=55.287229%2C25.157254%2C15"
+      },
+      {
+        "date": "2022-06-21",
+        "release": "2023-04-05",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.46",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2023_r03/MapServer/identify?geometry=55.287229%2C25.157254&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.272229%2C25.142253999999998%2C55.302229000000004%2C25.172254&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=37890&mapCenter=55.287229%2C25.157254%2C19"
+      },
+      {
+        "date": "2022-09-18",
+        "release": "2025-01-30",
+        "zoom": 19,
+        "provider": "Maxar",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2025_r01/MapServer/identify?geometry=55.287229%2C25.157254&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.272229%2C25.142253999999998%2C55.302229000000004%2C25.172254&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=36557&mapCenter=55.287229%2C25.157254%2C19"
+      },
+      {
+        "date": "2022-12-30",
+        "release": "2024-05-09",
+        "zoom": 15,
+        "provider": "Maxar",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2024_r05/MapServer/identify?geometry=55.287229%2C25.157254&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.272229%2C25.142253999999998%2C55.302229000000004%2C25.172254&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=52930&mapCenter=55.287229%2C25.157254%2C15"
+      },
+      {
+        "date": "2024-01-22",
+        "release": "2025-06-26",
+        "zoom": 15,
+        "provider": "Maxar",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2025_r06/MapServer/identify?geometry=55.287229%2C25.157254&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.272229%2C25.142253999999998%2C55.302229000000004%2C25.172254&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=48925&mapCenter=55.287229%2C25.157254%2C15"
+      },
+      {
+        "date": "2024-04-19",
+        "release": "2025-10-23",
+        "zoom": 19,
+        "provider": "Vantor",
+        "resolution": "0.31",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2025_r10/MapServer/identify?geometry=55.287229%2C25.157254&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.272229%2C25.142253999999998%2C55.302229000000004%2C25.172254&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=20512&mapCenter=55.287229%2C25.157254%2C19"
+      },
+      {
+        "date": "2025-02-20",
+        "release": "2026-01-29",
+        "zoom": 15,
+        "provider": "Vantor",
+        "resolution": "0.34",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2026_r01/MapServer/identify?geometry=55.287229%2C25.157254&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.272229%2C25.142253999999998%2C55.302229000000004%2C25.172254&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=22252&mapCenter=55.287229%2C25.157254%2C15"
+      },
+      {
+        "date": "2025-03-19",
+        "release": "2026-02-26",
+        "zoom": 19,
+        "provider": "Vantor",
+        "resolution": "0.46",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2026_r02/MapServer/identify?geometry=55.287229%2C25.157254&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.272229%2C25.142253999999998%2C55.302229000000004%2C25.172254&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=64001&mapCenter=55.287229%2C25.157254%2C19"
+      },
+      {
+        "date": "2025-11-23",
+        "release": "2026-10-29",
+        "zoom": 19,
+        "provider": "Vantor",
+        "resolution": "0.5",
+        "metadata": "https://metadata.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Metadata_2026_r10/MapServer/identify?geometry=55.287229%2C25.157254&geometryType=esriGeometryPoint&sr=4326&layers=all%3A4%2C5%2C6%2C7%2C8&tolerance=0&mapExtent=55.272229%2C25.142253999999998%2C55.302229000000004%2C25.172254&imageDisplay=512%2C512%2C96&returnGeometry=false&f=json",
+        "url": "https://livingatlas.arcgis.com/wayback/#active=43291&mapCenter=55.287229%2C25.157254%2C19"
+      }
+    ]
+  }
+}
