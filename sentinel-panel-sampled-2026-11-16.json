@@ -1,0 +1,1610 @@
+{
+  "sites": {
+    "village": {
+      "radar": [
+        {
+          "VV_mean": -6.9594550132751465,
+          "VH_mean": -15.230025291442871,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2018-10-14",
+          "month": "2018-10",
+          "image_count": 1,
+          "scene": "S1B_IW_GRDH_1SDV_20181014T021434_20181014T021459_013142_018489_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1B_IW_GRDH_1SDV_20181014T021434_20181014T021459_013142_018489_rtc",
+          "bbox": [
+            55.11655733862424,
+            25.034487,
+            55.117550661375766,
+            25.035387
+          ],
+          "site_id": "village"
+        },
+        {
+          "VV_mean": -6.472139358520508,
+          "VH_mean": -14.582749366760254,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2019-10-15",
+          "month": "2019-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20191015T021533_20191015T021556_029463_035A13_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20191015T021533_20191015T021556_029463_035A13_rtc",
+          "bbox": [
+            55.11655733862424,
+            25.034487,
+            55.117550661375766,
+            25.035387
+          ],
+          "site_id": "village"
+        },
+        {
+          "VV_mean": -6.633120059967041,
+          "VH_mean": -14.869881629943848,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2020-10-21",
+          "month": "2020-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20201021T021539_20201021T021603_034888_041155_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20201021T021539_20201021T021603_034888_041155_rtc",
+          "bbox": [
+            55.11655733862424,
+            25.034487,
+            55.117550661375766,
+            25.035387
+          ],
+          "site_id": "village"
+        },
+        {
+          "VV_mean": -6.814365863800049,
+          "VH_mean": -15.064160346984863,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2021-10-16",
+          "month": "2021-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20211016T021545_20211016T021608_040138_04C0DF_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20211016T021545_20211016T021608_040138_04C0DF_rtc",
+          "bbox": [
+            55.11655733862424,
+            25.034487,
+            55.117550661375766,
+            25.035387
+          ],
+          "site_id": "village"
+        },
+        {
+          "VV_mean": -7.659013271331787,
+          "VH_mean": -15.458637237548828,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2022-10-23",
+          "month": "2022-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20221023T021551_20221023T021614_045563_057283_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20221023T021551_20221023T021614_045563_057283_rtc",
+          "bbox": [
+            55.11655733862424,
+            25.034487,
+            55.117550661375766,
+            25.035387
+          ],
+          "site_id": "village"
+        },
+        {
+          "VV_mean": -9.913745880126953,
+          "VH_mean": -16.03852081298828,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2023-10-30",
+          "month": "2023-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20231030T021556_20231030T021619_050988_0625BA_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20231030T021556_20231030T021619_050988_0625BA_rtc",
+          "bbox": [
+            55.11655733862424,
+            25.034487,
+            55.117550661375766,
+            25.035387
+          ],
+          "site_id": "village"
+        },
+        {
+          "VV_mean": -7.82363748550415,
+          "VH_mean": -14.556926727294922,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2024-10-24",
+          "month": "2024-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20241024T021552_20241024T021615_056238_06E2B0_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20241024T021552_20241024T021615_056238_06E2B0_rtc",
+          "bbox": [
+            55.11655733862424,
+            25.034487,
+            55.117550661375766,
+            25.035387
+          ],
+          "site_id": "village"
+        },
+        {
+          "VV_mean": -6.22592306137085,
+          "VH_mean": -13.641005516052246,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2025-10-19",
+          "month": "2025-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20251019T021543_20251019T021606_061488_07AD46_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20251019T021543_20251019T021606_061488_07AD46_rtc",
+          "bbox": [
+            55.11655733862424,
+            25.034487,
+            55.117550661375766,
+            25.035387
+          ],
+          "site_id": "village"
+        },
+        {
+          "VV_mean": -6.2343573570251465,
+          "VH_mean": -13.654433250427246,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2026-10-21",
+          "month": "2026-10",
+          "image_count": 1,
+          "scene": "S1D_IW_GRDH_1SDV_20261021T021455_20261021T021520_005107_009ABD_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1D_IW_GRDH_1SDV_20261021T021455_20261021T021520_005107_009ABD_rtc",
+          "bbox": [
+            55.11655733862424,
+            25.034487,
+            55.117550661375766,
+            25.035387
+          ],
+          "site_id": "village"
+        }
+      ],
+      "optical": [
+        {
+          "NDVI_mean": 0.09712828461911471,
+          "NDVI_count": 100,
+          "date": "2018-10-01",
+          "month": "2018-10",
+          "image_count": 1,
+          "scene": "S2B_MSIL2A_20181001T064659_R020_T40RCN_20201009T070051",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20181001T064659_R020_T40RCN_20201009T070051",
+          "bbox": [
+            55.11655733862424,
+            25.034487,
+            55.117550661375766,
+            25.035387
+          ],
+          "site_id": "village"
+        },
+        {
+          "NDVI_mean": 0.141409303023908,
+          "NDVI_count": 100,
+          "date": "2019-10-21",
+          "month": "2019-10",
+          "image_count": 1,
+          "scene": "S2A_MSIL2A_20191021T064921_R020_T40RCN_20201004T043625",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2A_MSIL2A_20191021T064921_R020_T40RCN_20201004T043625",
+          "bbox": [
+            55.11655733862424,
+            25.034487,
+            55.117550661375766,
+            25.035387
+          ],
+          "site_id": "village"
+        },
+        {
+          "NDVI_mean": 0.16526984208503104,
+          "NDVI_count": 100,
+          "date": "2020-10-05",
+          "month": "2020-10",
+          "image_count": 1,
+          "scene": "S2A_MSIL2A_20201005T064741_R020_T40RCN_20201007T144911",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2A_MSIL2A_20201005T064741_R020_T40RCN_20201007T144911",
+          "bbox": [
+            55.11655733862424,
+            25.034487,
+            55.117550661375766,
+            25.035387
+          ],
+          "site_id": "village"
+        },
+        {
+          "NDVI_mean": 0.12084231218619891,
+          "NDVI_count": 100,
+          "date": "2021-10-10",
+          "month": "2021-10",
+          "image_count": 1,
+          "scene": "S2A_MSIL2A_20211010T064811_R020_T40RCN_20211010T174529",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2A_MSIL2A_20211010T064811_R020_T40RCN_20211010T174529",
+          "bbox": [
+            55.11655733862424,
+            25.034487,
+            55.117550661375766,
+            25.035387
+          ],
+          "site_id": "village"
+        },
+        {
+          "NDVI_mean": 0.177349114670715,
+          "NDVI_count": 100,
+          "date": "2022-10-20",
+          "month": "2022-10",
+          "image_count": 1,
+          "scene": "S2B_MSIL2A_20221020T064909_R020_T40RCN_20240721T214617",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20221020T064909_R020_T40RCN_20240721T214617",
+          "bbox": [
+            55.11655733862424,
+            25.034487,
+            55.117550661375766,
+            25.035387
+          ],
+          "site_id": "village"
+        },
+        {
+          "NDVI_mean": 0.12018701090012492,
+          "NDVI_count": 100,
+          "date": "2023-10-15",
+          "month": "2023-10",
+          "image_count": 1,
+          "scene": "S2B_MSIL2A_20231015T064839_R020_T40RCN_20241021T234614",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20231015T064839_R020_T40RCN_20241021T234614",
+          "bbox": [
+            55.11655733862424,
+            25.034487,
+            55.117550661375766,
+            25.035387
+          ],
+          "site_id": "village"
+        },
+        {
+          "NDVI_mean": 0.10225539394925999,
+          "NDVI_count": 100,
+          "date": "2024-10-09",
+          "month": "2024-10",
+          "image_count": 1,
+          "scene": "S2B_MSIL2A_20241009T064709_R020_T40RCN_20241009T093003",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20241009T064709_R020_T40RCN_20241009T093003",
+          "bbox": [
+            55.11655733862424,
+            25.034487,
+            55.117550661375766,
+            25.035387
+          ],
+          "site_id": "village"
+        },
+        {
+          "NDVI_mean": 0.11696756763936199,
+          "NDVI_count": 100,
+          "date": "2025-10-04",
+          "month": "2025-10",
+          "image_count": 1,
+          "scene": "S2B_MSIL2A_20251004T064629_R020_T40RCN_20251004T101955",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20251004T064629_R020_T40RCN_20251004T101955",
+          "bbox": [
+            55.11655733862424,
+            25.034487,
+            55.117550661375766,
+            25.035387
+          ],
+          "site_id": "village"
+        },
+        {
+          "NDVI_mean": 0.1941080824899635,
+          "NDVI_count": 100,
+          "date": "2026-10-19",
+          "month": "2026-10",
+          "image_count": 1,
+          "scene": "S2B_MSIL2A_20261019T064909_R020_T40RCN_20261019T103544",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20261019T064909_R020_T40RCN_20261019T103544",
+          "bbox": [
+            55.11655733862424,
+            25.034487,
+            55.117550661375766,
+            25.035387
+          ],
+          "site_id": "village"
+        }
+      ]
+    },
+    "frond": {
+      "radar": [
+        {
+          "VV_mean": -14.022518157958984,
+          "VH_mean": -20.718463897705078,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2018-10-14",
+          "month": "2018-10",
+          "image_count": 1,
+          "scene": "S1B_IW_GRDH_1SDV_20181014T021434_20181014T021459_013142_018489_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1B_IW_GRDH_1SDV_20181014T021434_20181014T021459_013142_018489_rtc",
+          "bbox": [
+            55.00025240448185,
+            25.018213,
+            55.00124559551815,
+            25.019113
+          ],
+          "site_id": "frond"
+        },
+        {
+          "VV_mean": -12.28619384765625,
+          "VH_mean": -19.74799156188965,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2019-10-15",
+          "month": "2019-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20191015T021533_20191015T021556_029463_035A13_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20191015T021533_20191015T021556_029463_035A13_rtc",
+          "bbox": [
+            55.00025240448185,
+            25.018213,
+            55.00124559551815,
+            25.019113
+          ],
+          "site_id": "frond"
+        },
+        {
+          "VV_mean": -13.153797149658203,
+          "VH_mean": -20.5810489654541,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2020-10-21",
+          "month": "2020-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20201021T021539_20201021T021603_034888_041155_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20201021T021539_20201021T021603_034888_041155_rtc",
+          "bbox": [
+            55.00025240448185,
+            25.018213,
+            55.00124559551815,
+            25.019113
+          ],
+          "site_id": "frond"
+        },
+        {
+          "VV_mean": -13.801173210144043,
+          "VH_mean": -21.162302017211914,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2021-10-16",
+          "month": "2021-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20211016T021545_20211016T021608_040138_04C0DF_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20211016T021545_20211016T021608_040138_04C0DF_rtc",
+          "bbox": [
+            55.00025240448185,
+            25.018213,
+            55.00124559551815,
+            25.019113
+          ],
+          "site_id": "frond"
+        },
+        {
+          "VV_mean": -13.539734840393066,
+          "VH_mean": -21.795494079589844,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2022-10-23",
+          "month": "2022-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20221023T021551_20221023T021614_045563_057283_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20221023T021551_20221023T021614_045563_057283_rtc",
+          "bbox": [
+            55.00025240448185,
+            25.018213,
+            55.00124559551815,
+            25.019113
+          ],
+          "site_id": "frond"
+        },
+        {
+          "VV_mean": -12.767766952514648,
+          "VH_mean": -21.957658767700195,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2023-10-30",
+          "month": "2023-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20231030T021556_20231030T021619_050988_0625BA_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20231030T021556_20231030T021619_050988_0625BA_rtc",
+          "bbox": [
+            55.00025240448185,
+            25.018213,
+            55.00124559551815,
+            25.019113
+          ],
+          "site_id": "frond"
+        },
+        {
+          "VV_mean": -14.256906509399414,
+          "VH_mean": -21.2611026763916,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2024-10-24",
+          "month": "2024-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20241024T021552_20241024T021615_056238_06E2B0_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20241024T021552_20241024T021615_056238_06E2B0_rtc",
+          "bbox": [
+            55.00025240448185,
+            25.018213,
+            55.00124559551815,
+            25.019113
+          ],
+          "site_id": "frond"
+        },
+        {
+          "VV_mean": -15.122501373291016,
+          "VH_mean": -21.976346969604492,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2025-10-19",
+          "month": "2025-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20251019T021543_20251019T021606_061488_07AD46_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20251019T021543_20251019T021606_061488_07AD46_rtc",
+          "bbox": [
+            55.00025240448185,
+            25.018213,
+            55.00124559551815,
+            25.019113
+          ],
+          "site_id": "frond"
+        },
+        {
+          "VV_mean": -11.214016914367676,
+          "VH_mean": -16.932933807373047,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2026-10-21",
+          "month": "2026-10",
+          "image_count": 1,
+          "scene": "S1D_IW_GRDH_1SDV_20261021T021455_20261021T021520_005107_009ABD_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1D_IW_GRDH_1SDV_20261021T021455_20261021T021520_005107_009ABD_rtc",
+          "bbox": [
+            55.00025240448185,
+            25.018213,
+            55.00124559551815,
+            25.019113
+          ],
+          "site_id": "frond"
+        }
+      ],
+      "optical": [
+        {
+          "NDVI_mean": -0.05375314502027194,
+          "NDVI_count": 74,
+          "date": "2018-10-26",
+          "month": "2018-10",
+          "image_count": 1,
+          "scene": "S2A_MSIL2A_20181026T064941_R020_T39RZH_20201009T152516",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2A_MSIL2A_20181026T064941_R020_T39RZH_20201009T152516",
+          "bbox": [
+            55.00025240448185,
+            25.018213,
+            55.00124559551815,
+            25.019113
+          ],
+          "site_id": "frond"
+        },
+        {
+          "NDVI_mean": -0.10870061307399126,
+          "NDVI_count": 82,
+          "date": "2019-10-26",
+          "month": "2019-10",
+          "image_count": 1,
+          "scene": "S2B_MSIL2A_20191026T064949_R020_T40RBN_20201004T062626",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20191026T064949_R020_T40RBN_20201004T062626",
+          "bbox": [
+            55.00025240448185,
+            25.018213,
+            55.00124559551815,
+            25.019113
+          ],
+          "site_id": "frond"
+        },
+        {
+          "NDVI_mean": -0.03550506810146416,
+          "NDVI_count": 61,
+          "date": "2020-10-10",
+          "month": "2020-10",
+          "image_count": 1,
+          "scene": "S2B_MSIL2A_20201010T064809_R020_T40RBN_20201012T042756",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20201010T064809_R020_T40RBN_20201012T042756",
+          "bbox": [
+            55.00025240448185,
+            25.018213,
+            55.00124559551815,
+            25.019113
+          ],
+          "site_id": "frond"
+        },
+        {
+          "NDVI_mean": 0.012327808233456953,
+          "NDVI_count": 45,
+          "date": "2021-10-20",
+          "month": "2021-10",
+          "image_count": 1,
+          "scene": "S2A_MSIL2A_20211020T064921_R020_T39RZH_20220512T204808",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2A_MSIL2A_20211020T064921_R020_T39RZH_20220512T204808",
+          "bbox": [
+            55.00025240448185,
+            25.018213,
+            55.00124559551815,
+            25.019113
+          ],
+          "site_id": "frond"
+        },
+        {
+          "NDVI_mean": 0.016645388708488605,
+          "NDVI_count": 42,
+          "date": "2022-10-25",
+          "month": "2022-10",
+          "image_count": 1,
+          "scene": "S2A_MSIL2A_20221025T064941_R020_T40RBN_20221025T165132",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2A_MSIL2A_20221025T064941_R020_T40RBN_20221025T165132",
+          "bbox": [
+            55.00025240448185,
+            25.018213,
+            55.00124559551815,
+            25.019113
+          ],
+          "site_id": "frond"
+        },
+        {
+          "NDVI_mean": 0.017311621739792213,
+          "NDVI_count": 58,
+          "date": "2023-10-05",
+          "month": "2023-10",
+          "image_count": 1,
+          "scene": "S2B_MSIL2A_20231005T064729_R020_T40RBN_20241107T195305",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20231005T064729_R020_T40RBN_20241107T195305",
+          "bbox": [
+            55.00025240448185,
+            25.018213,
+            55.00124559551815,
+            25.019113
+          ],
+          "site_id": "frond"
+        },
+        {
+          "NDVI_mean": 0.006161400363448504,
+          "NDVI_count": 54,
+          "date": "2024-10-09",
+          "month": "2024-10",
+          "image_count": 1,
+          "scene": "S2B_MSIL2A_20241009T064709_R020_T40RBN_20241009T093003",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20241009T064709_R020_T40RBN_20241009T093003",
+          "bbox": [
+            55.00025240448185,
+            25.018213,
+            55.00124559551815,
+            25.019113
+          ],
+          "site_id": "frond"
+        },
+        {
+          "NDVI_mean": 0.019538182454453032,
+          "NDVI_count": 54,
+          "date": "2025-10-31",
+          "month": "2025-10",
+          "image_count": 1,
+          "scene": "S2A_MSIL2A_20251031T065321_R020_T40RBN_20251031T093101",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2A_MSIL2A_20251031T065321_R020_T40RBN_20251031T093101",
+          "bbox": [
+            55.00025240448185,
+            25.018213,
+            55.00124559551815,
+            25.019113
+          ],
+          "site_id": "frond"
+        },
+        {
+          "NDVI_mean": -0.002398438101557884,
+          "NDVI_count": 100,
+          "date": "2026-10-19",
+          "month": "2026-10",
+          "image_count": 1,
+          "scene": "S2B_MSIL2A_20261019T064909_R020_T40RBN_20261019T103544",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20261019T064909_R020_T40RBN_20261019T103544",
+          "bbox": [
+            55.00025240448185,
+            25.018213,
+            55.00124559551815,
+            25.019113
+          ],
+          "site_id": "frond"
+        }
+      ]
+    },
+    "como": {
+      "radar": [
+        {
+          "VV_mean": -7.803586483001709,
+          "VH_mean": -13.678757667541504,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2018-10-14",
+          "month": "2018-10",
+          "image_count": 1,
+          "scene": "S1B_IW_GRDH_1SDV_20181014T021434_20181014T021459_013142_018489_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1B_IW_GRDH_1SDV_20181014T021434_20181014T021459_013142_018489_rtc",
+          "bbox": [
+            55.144933029398494,
+            25.11071,
+            55.1459269706015,
+            25.111610000000002
+          ],
+          "site_id": "como"
+        },
+        {
+          "VV_mean": -8.090039253234863,
+          "VH_mean": -13.921064376831055,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2019-10-15",
+          "month": "2019-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20191015T021533_20191015T021556_029463_035A13_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20191015T021533_20191015T021556_029463_035A13_rtc",
+          "bbox": [
+            55.144933029398494,
+            25.11071,
+            55.1459269706015,
+            25.111610000000002
+          ],
+          "site_id": "como"
+        },
+        {
+          "VV_mean": -9.288971900939941,
+          "VH_mean": -14.291107177734375,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2020-10-21",
+          "month": "2020-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20201021T021539_20201021T021603_034888_041155_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20201021T021539_20201021T021603_034888_041155_rtc",
+          "bbox": [
+            55.144933029398494,
+            25.11071,
+            55.1459269706015,
+            25.111610000000002
+          ],
+          "site_id": "como"
+        },
+        {
+          "VV_mean": -8.489764213562012,
+          "VH_mean": -14.071258544921875,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2021-10-16",
+          "month": "2021-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20211016T021545_20211016T021608_040138_04C0DF_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20211016T021545_20211016T021608_040138_04C0DF_rtc",
+          "bbox": [
+            55.144933029398494,
+            25.11071,
+            55.1459269706015,
+            25.111610000000002
+          ],
+          "site_id": "como"
+        },
+        {
+          "VV_mean": -8.067622184753418,
+          "VH_mean": -12.8519868850708,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2022-10-23",
+          "month": "2022-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20221023T021551_20221023T021614_045563_057283_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20221023T021551_20221023T021614_045563_057283_rtc",
+          "bbox": [
+            55.144933029398494,
+            25.11071,
+            55.1459269706015,
+            25.111610000000002
+          ],
+          "site_id": "como"
+        },
+        {
+          "VV_mean": -6.5671539306640625,
+          "VH_mean": -11.863702774047852,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2023-10-30",
+          "month": "2023-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20231030T021556_20231030T021619_050988_0625BA_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20231030T021556_20231030T021619_050988_0625BA_rtc",
+          "bbox": [
+            55.144933029398494,
+            25.11071,
+            55.1459269706015,
+            25.111610000000002
+          ],
+          "site_id": "como"
+        },
+        {
+          "VV_mean": -6.114014148712158,
+          "VH_mean": -11.95840072631836,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2024-10-24",
+          "month": "2024-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20241024T021552_20241024T021615_056238_06E2B0_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20241024T021552_20241024T021615_056238_06E2B0_rtc",
+          "bbox": [
+            55.144933029398494,
+            25.11071,
+            55.1459269706015,
+            25.111610000000002
+          ],
+          "site_id": "como"
+        },
+        {
+          "VV_mean": 0.7514190673828125,
+          "VH_mean": -4.951821327209473,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2025-10-19",
+          "month": "2025-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20251019T021543_20251019T021606_061488_07AD46_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20251019T021543_20251019T021606_061488_07AD46_rtc",
+          "bbox": [
+            55.144933029398494,
+            25.11071,
+            55.1459269706015,
+            25.111610000000002
+          ],
+          "site_id": "como"
+        },
+        {
+          "VV_mean": -0.2155313491821289,
+          "VH_mean": -6.0963358879089355,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2026-10-21",
+          "month": "2026-10",
+          "image_count": 1,
+          "scene": "S1D_IW_GRDH_1SDV_20261021T021455_20261021T021520_005107_009ABD_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1D_IW_GRDH_1SDV_20261021T021455_20261021T021520_005107_009ABD_rtc",
+          "bbox": [
+            55.144933029398494,
+            25.11071,
+            55.1459269706015,
+            25.111610000000002
+          ],
+          "site_id": "como"
+        }
+      ],
+      "optical": [
+        {
+          "NDVI_mean": 0.06868434816931492,
+          "NDVI_count": 100,
+          "date": "2018-10-01",
+          "month": "2018-10",
+          "image_count": 1,
+          "scene": "S2B_MSIL2A_20181001T064659_R020_T40RCN_20201009T070051",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20181001T064659_R020_T40RCN_20201009T070051",
+          "bbox": [
+            55.144933029398494,
+            25.11071,
+            55.1459269706015,
+            25.111610000000002
+          ],
+          "site_id": "como"
+        },
+        {
+          "NDVI_mean": 0.09275385018078307,
+          "NDVI_count": 100,
+          "date": "2019-10-21",
+          "month": "2019-10",
+          "image_count": 1,
+          "scene": "S2A_MSIL2A_20191021T064921_R020_T40RCN_20201004T043625",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2A_MSIL2A_20191021T064921_R020_T40RCN_20201004T043625",
+          "bbox": [
+            55.144933029398494,
+            25.11071,
+            55.1459269706015,
+            25.111610000000002
+          ],
+          "site_id": "como"
+        },
+        {
+          "NDVI_mean": 0.09521685028307117,
+          "NDVI_count": 100,
+          "date": "2020-10-05",
+          "month": "2020-10",
+          "image_count": 1,
+          "scene": "S2A_MSIL2A_20201005T064741_R020_T40RCN_20201007T144911",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2A_MSIL2A_20201005T064741_R020_T40RCN_20201007T144911",
+          "bbox": [
+            55.144933029398494,
+            25.11071,
+            55.1459269706015,
+            25.111610000000002
+          ],
+          "site_id": "como"
+        },
+        {
+          "NDVI_mean": 0.04688864471777178,
+          "NDVI_count": 100,
+          "date": "2021-10-10",
+          "month": "2021-10",
+          "image_count": 1,
+          "scene": "S2A_MSIL2A_20211010T064811_R020_T40RCN_20211010T174529",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2A_MSIL2A_20211010T064811_R020_T40RCN_20211010T174529",
+          "bbox": [
+            55.144933029398494,
+            25.11071,
+            55.1459269706015,
+            25.111610000000002
+          ],
+          "site_id": "como"
+        },
+        {
+          "NDVI_mean": 0.06589688407098547,
+          "NDVI_count": 100,
+          "date": "2022-10-20",
+          "month": "2022-10",
+          "image_count": 1,
+          "scene": "S2B_MSIL2A_20221020T064909_R020_T40RCN_20240721T214617",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20221020T064909_R020_T40RCN_20240721T214617",
+          "bbox": [
+            55.144933029398494,
+            25.11071,
+            55.1459269706015,
+            25.111610000000002
+          ],
+          "site_id": "como"
+        },
+        {
+          "NDVI_mean": 0.07608716559605463,
+          "NDVI_count": 100,
+          "date": "2023-10-15",
+          "month": "2023-10",
+          "image_count": 1,
+          "scene": "S2B_MSIL2A_20231015T064839_R020_T40RCN_20241021T234614",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20231015T064839_R020_T40RCN_20241021T234614",
+          "bbox": [
+            55.144933029398494,
+            25.11071,
+            55.1459269706015,
+            25.111610000000002
+          ],
+          "site_id": "como"
+        },
+        {
+          "NDVI_mean": 0.02251659251453178,
+          "NDVI_count": 100,
+          "date": "2024-10-09",
+          "month": "2024-10",
+          "image_count": 1,
+          "scene": "S2B_MSIL2A_20241009T064709_R020_T40RCN_20241009T093003",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20241009T064709_R020_T40RCN_20241009T093003",
+          "bbox": [
+            55.144933029398494,
+            25.11071,
+            55.1459269706015,
+            25.111610000000002
+          ],
+          "site_id": "como"
+        },
+        {
+          "NDVI_mean": 0.0408638954274034,
+          "NDVI_count": 100,
+          "date": "2025-10-04",
+          "month": "2025-10",
+          "image_count": 1,
+          "scene": "S2B_MSIL2A_20251004T064629_R020_T40RCN_20251004T101955",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20251004T064629_R020_T40RCN_20251004T101955",
+          "bbox": [
+            55.144933029398494,
+            25.11071,
+            55.1459269706015,
+            25.111610000000002
+          ],
+          "site_id": "como"
+        },
+        {
+          "NDVI_mean": 0.023575510225128007,
+          "NDVI_count": 100,
+          "date": "2026-10-19",
+          "month": "2026-10",
+          "image_count": 1,
+          "scene": "S2B_MSIL2A_20261019T064909_R020_T40RCN_20261019T103544",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20261019T064909_R020_T40RCN_20261019T103544",
+          "bbox": [
+            55.144933029398494,
+            25.11071,
+            55.1459269706015,
+            25.111610000000002
+          ],
+          "site_id": "como"
+        }
+      ]
+    },
+    "naya": {
+      "radar": [
+        {
+          "VV_mean": -9.3156156539917,
+          "VH_mean": -18.62588882446289,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2018-10-14",
+          "month": "2018-10",
+          "image_count": 1,
+          "scene": "S1B_IW_GRDH_1SDV_20181014T021434_20181014T021459_013142_018489_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1B_IW_GRDH_1SDV_20181014T021434_20181014T021459_013142_018489_rtc",
+          "bbox": [
+            55.286731841787756,
+            25.156803999999998,
+            55.28772615821225,
+            25.157704
+          ],
+          "site_id": "naya"
+        },
+        {
+          "VV_mean": -9.134711265563965,
+          "VH_mean": -16.290912628173828,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2019-10-15",
+          "month": "2019-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20191015T021533_20191015T021556_029463_035A13_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20191015T021533_20191015T021556_029463_035A13_rtc",
+          "bbox": [
+            55.286731841787756,
+            25.156803999999998,
+            55.28772615821225,
+            25.157704
+          ],
+          "site_id": "naya"
+        },
+        {
+          "VV_mean": -6.382413864135742,
+          "VH_mean": -12.175786018371582,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2020-10-21",
+          "month": "2020-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20201021T021539_20201021T021603_034888_041155_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20201021T021539_20201021T021603_034888_041155_rtc",
+          "bbox": [
+            55.286731841787756,
+            25.156803999999998,
+            55.28772615821225,
+            25.157704
+          ],
+          "site_id": "naya"
+        },
+        {
+          "VV_mean": -8.333551406860352,
+          "VH_mean": -14.577048301696777,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2021-10-16",
+          "month": "2021-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20211016T021545_20211016T021608_040138_04C0DF_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20211016T021545_20211016T021608_040138_04C0DF_rtc",
+          "bbox": [
+            55.286731841787756,
+            25.156803999999998,
+            55.28772615821225,
+            25.157704
+          ],
+          "site_id": "naya"
+        },
+        {
+          "VV_mean": -6.794137477874756,
+          "VH_mean": -11.16282844543457,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2022-10-23",
+          "month": "2022-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20221023T021551_20221023T021614_045563_057283_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20221023T021551_20221023T021614_045563_057283_rtc",
+          "bbox": [
+            55.286731841787756,
+            25.156803999999998,
+            55.28772615821225,
+            25.157704
+          ],
+          "site_id": "naya"
+        },
+        {
+          "VV_mean": -4.993897914886475,
+          "VH_mean": -12.452556610107422,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2023-10-30",
+          "month": "2023-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20231030T021556_20231030T021619_050988_0625BA_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20231030T021556_20231030T021619_050988_0625BA_rtc",
+          "bbox": [
+            55.286731841787756,
+            25.156803999999998,
+            55.28772615821225,
+            25.157704
+          ],
+          "site_id": "naya"
+        },
+        {
+          "VV_mean": -10.796695709228516,
+          "VH_mean": -17.710708618164062,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2024-10-24",
+          "month": "2024-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20241024T021552_20241024T021615_056238_06E2B0_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20241024T021552_20241024T021615_056238_06E2B0_rtc",
+          "bbox": [
+            55.286731841787756,
+            25.156803999999998,
+            55.28772615821225,
+            25.157704
+          ],
+          "site_id": "naya"
+        },
+        {
+          "VV_mean": -4.804457187652588,
+          "VH_mean": -9.231746673583984,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2025-10-19",
+          "month": "2025-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20251019T021543_20251019T021606_061488_07AD46_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20251019T021543_20251019T021606_061488_07AD46_rtc",
+          "bbox": [
+            55.286731841787756,
+            25.156803999999998,
+            55.28772615821225,
+            25.157704
+          ],
+          "site_id": "naya"
+        },
+        {
+          "VV_mean": 0.08138647675514221,
+          "VH_mean": -1.0365155935287476,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2026-10-21",
+          "month": "2026-10",
+          "image_count": 1,
+          "scene": "S1D_IW_GRDH_1SDV_20261021T021455_20261021T021520_005107_009ABD_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1D_IW_GRDH_1SDV_20261021T021455_20261021T021520_005107_009ABD_rtc",
+          "bbox": [
+            55.286731841787756,
+            25.156803999999998,
+            55.28772615821225,
+            25.157704
+          ],
+          "site_id": "naya"
+        }
+      ],
+      "optical": [
+        {
+          "NDVI_mean": 0.04094283645392607,
+          "NDVI_count": 100,
+          "date": "2018-10-01",
+          "month": "2018-10",
+          "image_count": 1,
+          "scene": "S2B_MSIL2A_20181001T064659_R020_T40RCN_20201009T070051",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20181001T064659_R020_T40RCN_20201009T070051",
+          "bbox": [
+            55.286731841787756,
+            25.156803999999998,
+            55.28772615821225,
+            25.157704
+          ],
+          "site_id": "naya"
+        },
+        {
+          "NDVI_mean": 0.03382048962754516,
+          "NDVI_count": 100,
+          "date": "2019-10-21",
+          "month": "2019-10",
+          "image_count": 1,
+          "scene": "S2A_MSIL2A_20191021T064921_R020_T40RCN_20201004T043625",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2A_MSIL2A_20191021T064921_R020_T40RCN_20201004T043625",
+          "bbox": [
+            55.286731841787756,
+            25.156803999999998,
+            55.28772615821225,
+            25.157704
+          ],
+          "site_id": "naya"
+        },
+        {
+          "NDVI_mean": 0.044824724965264455,
+          "NDVI_count": 100,
+          "date": "2020-10-05",
+          "month": "2020-10",
+          "image_count": 1,
+          "scene": "S2A_MSIL2A_20201005T064741_R020_T40RCN_20201007T144911",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2A_MSIL2A_20201005T064741_R020_T40RCN_20201007T144911",
+          "bbox": [
+            55.286731841787756,
+            25.156803999999998,
+            55.28772615821225,
+            25.157704
+          ],
+          "site_id": "naya"
+        },
+        {
+          "NDVI_mean": 0.02535473479951067,
+          "NDVI_count": 100,
+          "date": "2021-10-10",
+          "month": "2021-10",
+          "image_count": 1,
+          "scene": "S2A_MSIL2A_20211010T064811_R020_T40RCN_20211010T174529",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2A_MSIL2A_20211010T064811_R020_T40RCN_20211010T174529",
+          "bbox": [
+            55.286731841787756,
+            25.156803999999998,
+            55.28772615821225,
+            25.157704
+          ],
+          "site_id": "naya"
+        },
+        {
+          "NDVI_mean": 0.010756016897688353,
+          "NDVI_count": 100,
+          "date": "2022-10-20",
+          "month": "2022-10",
+          "image_count": 1,
+          "scene": "S2B_MSIL2A_20221020T064909_R020_T40RCN_20240721T214617",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20221020T064909_R020_T40RCN_20240721T214617",
+          "bbox": [
+            55.286731841787756,
+            25.156803999999998,
+            55.28772615821225,
+            25.157704
+          ],
+          "site_id": "naya"
+        },
+        {
+          "NDVI_mean": -0.0005491473622924475,
+          "NDVI_count": 100,
+          "date": "2023-10-15",
+          "month": "2023-10",
+          "image_count": 1,
+          "scene": "S2B_MSIL2A_20231015T064839_R020_T40RCN_20241021T234614",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20231015T064839_R020_T40RCN_20241021T234614",
+          "bbox": [
+            55.286731841787756,
+            25.156803999999998,
+            55.28772615821225,
+            25.157704
+          ],
+          "site_id": "naya"
+        },
+        {
+          "NDVI_mean": -0.017723589206814726,
+          "NDVI_count": 100,
+          "date": "2024-10-09",
+          "month": "2024-10",
+          "image_count": 1,
+          "scene": "S2B_MSIL2A_20241009T064709_R020_T40RCN_20241009T093003",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20241009T064709_R020_T40RCN_20241009T093003",
+          "bbox": [
+            55.286731841787756,
+            25.156803999999998,
+            55.28772615821225,
+            25.157704
+          ],
+          "site_id": "naya"
+        },
+        {
+          "NDVI_mean": 0.03171260128488068,
+          "NDVI_count": 100,
+          "date": "2025-10-04",
+          "month": "2025-10",
+          "image_count": 1,
+          "scene": "S2B_MSIL2A_20251004T064629_R020_T40RCN_20251004T101955",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20251004T064629_R020_T40RCN_20251004T101955",
+          "bbox": [
+            55.286731841787756,
+            25.156803999999998,
+            55.28772615821225,
+            25.157704
+          ],
+          "site_id": "naya"
+        },
+        {
+          "NDVI_mean": 0.0035901257237775886,
+          "NDVI_count": 100,
+          "date": "2026-10-19",
+          "month": "2026-10",
+          "image_count": 1,
+          "scene": "S2B_MSIL2A_20261019T064909_R020_T40RCN_20261019T103544",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20261019T064909_R020_T40RCN_20261019T103544",
+          "bbox": [
+            55.286731841787756,
+            25.156803999999998,
+            55.28772615821225,
+            25.157704
+          ],
+          "site_id": "naya"
+        }
+      ]
+    },
+    "mall": {
+      "radar": [
+        {
+          "VV_mean": -6.023535251617432,
+          "VH_mean": -13.186118125915527,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2018-10-14",
+          "month": "2018-10",
+          "image_count": 1,
+          "scene": "S1B_IW_GRDH_1SDV_20181014T021434_20181014T021459_013142_018489_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1B_IW_GRDH_1SDV_20181014T021434_20181014T021459_013142_018489_rtc",
+          "bbox": [
+            55.2391830682514,
+            25.10115,
+            55.2401769317486,
+            25.102050000000002
+          ],
+          "site_id": "mall"
+        },
+        {
+          "VV_mean": -1.7237967252731323,
+          "VH_mean": -6.5882887840271,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2019-10-15",
+          "month": "2019-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20191015T021533_20191015T021556_029463_035A13_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20191015T021533_20191015T021556_029463_035A13_rtc",
+          "bbox": [
+            55.2391830682514,
+            25.10115,
+            55.2401769317486,
+            25.102050000000002
+          ],
+          "site_id": "mall"
+        },
+        {
+          "VV_mean": -0.17982667684555054,
+          "VH_mean": -8.256032943725586,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2020-10-21",
+          "month": "2020-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20201021T021539_20201021T021603_034888_041155_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20201021T021539_20201021T021603_034888_041155_rtc",
+          "bbox": [
+            55.2391830682514,
+            25.10115,
+            55.2401769317486,
+            25.102050000000002
+          ],
+          "site_id": "mall"
+        },
+        {
+          "VV_mean": -0.2296522855758667,
+          "VH_mean": -7.870544910430908,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2021-10-16",
+          "month": "2021-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20211016T021545_20211016T021608_040138_04C0DF_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20211016T021545_20211016T021608_040138_04C0DF_rtc",
+          "bbox": [
+            55.2391830682514,
+            25.10115,
+            55.2401769317486,
+            25.102050000000002
+          ],
+          "site_id": "mall"
+        },
+        {
+          "VV_mean": 0.061225324869155884,
+          "VH_mean": -7.954636096954346,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2022-10-23",
+          "month": "2022-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20221023T021551_20221023T021614_045563_057283_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20221023T021551_20221023T021614_045563_057283_rtc",
+          "bbox": [
+            55.2391830682514,
+            25.10115,
+            55.2401769317486,
+            25.102050000000002
+          ],
+          "site_id": "mall"
+        },
+        {
+          "VV_mean": -0.15084968507289886,
+          "VH_mean": -7.816122055053711,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2023-10-30",
+          "month": "2023-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20231030T021556_20231030T021619_050988_0625BA_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20231030T021556_20231030T021619_050988_0625BA_rtc",
+          "bbox": [
+            55.2391830682514,
+            25.10115,
+            55.2401769317486,
+            25.102050000000002
+          ],
+          "site_id": "mall"
+        },
+        {
+          "VV_mean": -0.41269612312316895,
+          "VH_mean": -8.467752456665039,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2024-10-24",
+          "month": "2024-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20241024T021552_20241024T021615_056238_06E2B0_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20241024T021552_20241024T021615_056238_06E2B0_rtc",
+          "bbox": [
+            55.2391830682514,
+            25.10115,
+            55.2401769317486,
+            25.102050000000002
+          ],
+          "site_id": "mall"
+        },
+        {
+          "VV_mean": 0.07788237184286118,
+          "VH_mean": -6.6066789627075195,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2025-10-19",
+          "month": "2025-10",
+          "image_count": 1,
+          "scene": "S1A_IW_GRDH_1SDV_20251019T021543_20251019T021606_061488_07AD46_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1A_IW_GRDH_1SDV_20251019T021543_20251019T021606_061488_07AD46_rtc",
+          "bbox": [
+            55.2391830682514,
+            25.10115,
+            55.2401769317486,
+            25.102050000000002
+          ],
+          "site_id": "mall"
+        },
+        {
+          "VV_mean": -0.28672292828559875,
+          "VH_mean": -6.212387561798096,
+          "VV_count": 100,
+          "VH_count": 100,
+          "orbit": 166,
+          "date": "2026-10-21",
+          "month": "2026-10",
+          "image_count": 1,
+          "scene": "S1D_IW_GRDH_1SDV_20261021T021455_20261021T021520_005107_009ABD_rtc",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items/S1D_IW_GRDH_1SDV_20261021T021455_20261021T021520_005107_009ABD_rtc",
+          "bbox": [
+            55.2391830682514,
+            25.10115,
+            55.2401769317486,
+            25.102050000000002
+          ],
+          "site_id": "mall"
+        }
+      ],
+      "optical": [
+        {
+          "NDVI_mean": 0.006429494637678437,
+          "NDVI_count": 100,
+          "date": "2018-10-01",
+          "month": "2018-10",
+          "image_count": 1,
+          "scene": "S2B_MSIL2A_20181001T064659_R020_T40RCN_20201009T070051",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20181001T064659_R020_T40RCN_20201009T070051",
+          "bbox": [
+            55.2391830682514,
+            25.10115,
+            55.2401769317486,
+            25.102050000000002
+          ],
+          "site_id": "mall"
+        },
+        {
+          "NDVI_mean": -0.02295015787042477,
+          "NDVI_count": 100,
+          "date": "2019-10-21",
+          "month": "2019-10",
+          "image_count": 1,
+          "scene": "S2A_MSIL2A_20191021T064921_R020_T40RCN_20201004T043625",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2A_MSIL2A_20191021T064921_R020_T40RCN_20201004T043625",
+          "bbox": [
+            55.2391830682514,
+            25.10115,
+            55.2401769317486,
+            25.102050000000002
+          ],
+          "site_id": "mall"
+        },
+        {
+          "NDVI_mean": -0.005821034579424556,
+          "NDVI_count": 100,
+          "date": "2020-10-05",
+          "month": "2020-10",
+          "image_count": 1,
+          "scene": "S2A_MSIL2A_20201005T064741_R020_T40RCN_20201007T144911",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2A_MSIL2A_20201005T064741_R020_T40RCN_20201007T144911",
+          "bbox": [
+            55.2391830682514,
+            25.10115,
+            55.2401769317486,
+            25.102050000000002
+          ],
+          "site_id": "mall"
+        },
+        {
+          "NDVI_mean": -0.018789106425854983,
+          "NDVI_count": 100,
+          "date": "2021-10-10",
+          "month": "2021-10",
+          "image_count": 1,
+          "scene": "S2A_MSIL2A_20211010T064811_R020_T40RCN_20211010T174529",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2A_MSIL2A_20211010T064811_R020_T40RCN_20211010T174529",
+          "bbox": [
+            55.2391830682514,
+            25.10115,
+            55.2401769317486,
+            25.102050000000002
+          ],
+          "site_id": "mall"
+        },
+        {
+          "NDVI_mean": -0.0021012886231348386,
+          "NDVI_count": 100,
+          "date": "2022-10-20",
+          "month": "2022-10",
+          "image_count": 1,
+          "scene": "S2B_MSIL2A_20221020T064909_R020_T40RCN_20240721T214617",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20221020T064909_R020_T40RCN_20240721T214617",
+          "bbox": [
+            55.2391830682514,
+            25.10115,
+            55.2401769317486,
+            25.102050000000002
+          ],
+          "site_id": "mall"
+        },
+        {
+          "NDVI_mean": -0.03789233061273248,
+          "NDVI_count": 100,
+          "date": "2023-10-15",
+          "month": "2023-10",
+          "image_count": 1,
+          "scene": "S2B_MSIL2A_20231015T064839_R020_T40RCN_20241021T234614",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20231015T064839_R020_T40RCN_20241021T234614",
+          "bbox": [
+            55.2391830682514,
+            25.10115,
+            55.2401769317486,
+            25.102050000000002
+          ],
+          "site_id": "mall"
+        },
+        {
+          "NDVI_mean": -0.012798182449294022,
+          "NDVI_count": 100,
+          "date": "2024-10-09",
+          "month": "2024-10",
+          "image_count": 1,
+          "scene": "S2B_MSIL2A_20241009T064709_R020_T40RCN_20241009T093003",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20241009T064709_R020_T40RCN_20241009T093003",
+          "bbox": [
+            55.2391830682514,
+            25.10115,
+            55.2401769317486,
+            25.102050000000002
+          ],
+          "site_id": "mall"
+        },
+        {
+          "NDVI_mean": -0.0031742357624569982,
+          "NDVI_count": 100,
+          "date": "2025-10-04",
+          "month": "2025-10",
+          "image_count": 1,
+          "scene": "S2B_MSIL2A_20251004T064629_R020_T40RCN_20251004T101955",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20251004T064629_R020_T40RCN_20251004T101955",
+          "bbox": [
+            55.2391830682514,
+            25.10115,
+            55.2401769317486,
+            25.102050000000002
+          ],
+          "site_id": "mall"
+        },
+        {
+          "NDVI_mean": -0.04163925576079943,
+          "NDVI_count": 100,
+          "date": "2026-10-19",
+          "month": "2026-10",
+          "image_count": 1,
+          "scene": "S2B_MSIL2A_20261019T064909_R020_T40RCN_20261019T103544",
+          "source": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20261019T064909_R020_T40RCN_20261019T103544",
+          "bbox": [
+            55.2391830682514,
+            25.10115,
+            55.2401769317486,
+            25.102050000000002
+          ],
+          "site_id": "mall"
+        }
+      ]
+    }
+  },
+  "errors": []
+}

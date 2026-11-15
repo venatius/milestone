@@ -153,6 +153,24 @@ tr.sel td{background:#eef4f9}
 .steps h3{font-size:14px;margin:0 0 6px}
 .steps h3::before{counter-increment:st;content:counter(st);display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--accent);color:#fff;font-size:11px;margin-right:8px;vertical-align:1px}
 .steps p{margin:0;font-size:13px;color:var(--soft)}
+.project-cases{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:12px}
+.project-cases button{display:grid;gap:5px;text-align:left;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:14px;min-height:68px}
+.project-cases button[aria-pressed=true]{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.project-cases button span{font-size:13px;color:var(--soft)}
+#constructionCase{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:16px}
+#constructionCase li{margin-bottom:12px;overflow-wrap:anywhere}
+#constructionCase li p{margin:4px 0}
+#constructionCase summary{cursor:pointer}
+.tabs{flex-wrap:wrap}
+.project-controls{display:flex;flex-wrap:wrap;align-items:end;gap:12px}
+.project-controls label{display:grid;gap:4px;min-width:0;max-width:100%}
+.project-controls select{max-width:100%}
+.archive-viewer{display:block;width:100%;height:clamp(360px,65vh,680px);border:1px solid var(--line);margin:12px 0}
+.forecast-chart{display:grid;gap:9px;padding:0;list-style:none}
+.forecast-chart li{display:grid;grid-template-columns:minmax(130px,1fr) minmax(90px,2fr) 55px;align-items:center;gap:8px}
+.forecast-chart meter{width:100%}
+.forecast-controls input[type=number]{width:7em}
+.milestone-photo{display:block;width:min(180px,100%);margin:6px 0;border-radius:5px}
 .now-next{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .now-next>div{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 18px}
 .now-next h3{margin:0 0 6px;font-size:14px}
@@ -186,14 +204,24 @@ footer{font-size:12px;color:var(--faint);margin-top:22px}
   .stamp{left:8px;top:8px;padding:4px 8px;font-size:11px}
   .stamp b{font-size:12px}
 }
+  .project-hero{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:16px;align-items:start;margin-top:16px}
+  .project-visual,.project-hero #constructionCase{min-width:0}
+  .project-hero #constructionCase{margin-top:0}
+  .project-visual .toolbar{grid-template-columns:minmax(0,1fr) auto;gap:10px}
+  .project-visual .toolbar .slider{grid-column:1/-1;grid-row:2;min-width:0}
+  .project-visual .toolbar .btns{flex-wrap:wrap;justify-content:flex-end}
+  .project-visual .toolbar .btns select{min-width:0;width:auto}
+  #projectCharts{margin-top:20px}
+  #legacyCharts>.insight{margin-bottom:12px}
+  @media(max-width:800px){.project-hero{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <header class="top">
-  <div class="brand">Milestone<span>Al Furjan pilot</span></div>
+  <div class="brand">Milestone<span>Dubai pilot</span></div>
   <nav class="tabs" role="tablist">
     <button role="tab" data-view="overview" aria-selected="true">Overview</button>
-    <button role="tab" data-view="timeline" aria-selected="false">Site timeline</button>
+    <button role="tab" data-view="construction" aria-selected="false">Projects</button>
     <button role="tab" data-view="registry" aria-selected="false">Registry</button>
     <button role="tab" data-view="notes" aria-selected="false">Notes</button>
   </nav>
@@ -221,7 +249,7 @@ footer{font-size:12px;color:var(--faint);margin-top:22px}
       <li>Official DLD project and land registry loaded: 3,039 projects, 266,258 land records</li>
       <li>103 Al Furjan projects linked to their land records, with 7 flagged for review</li>
       <li>Nearly 9 years of monthly radar and optical measurements for three test sites</li>
-      <li>Construction-stage evidence notes and site timelines for four areas</li>
+      <li>Dated high-resolution imagery and construction stage reviews for four areas</li>
     </ul></div>
     <div><h3>Next</h3><ul>
       <li>Verify a project-to-plot boundary match with an authoritative source</li>
@@ -230,13 +258,23 @@ footer{font-size:12px;color:var(--faint);margin-top:22px}
     </ul></div>
   </div>
 
-  <div class="cta"><button id="goTimeline">Open the site timeline</button><span>Start with the Al Furjan test site.</span></div>
+  <div class="cta"><button id="goTimeline">Open projects</button><span>Start with Jebel Ali Village.</span></div>
+  <p><button class="linkbtn" data-view="construction">Compare construction milestones across projects</button></p>
   <p class="src">Registry: Data Dubai. Satellite data: Copernicus Sentinel via Earth Engine and Microsoft Planetary Computer. Historical imagery: Esri Wayback and Google Earth.</p>
 </section>
 
-<section id="view-timeline" hidden>
+<section id="view-construction" class="ov" hidden>
+  <h2>Projects</h2>
+  <div class="project-controls">
+    <label>Project type <select id="projectType"><option value="">All types</option></select></label>
+    <label>Project name <select id="projectName"></select></label>
+    <label>Saved projects <select id="savedProjects"><option value="">Open a saved project</option></select></label>
+  </div>
+  <div class="project-hero">
+    <div class="project-visual">
+<section id="projectTimeline" aria-label="Imagery timeline" hidden>
   <div class="toolbar">
-    <select id="site" aria-label="Site">
+    <select id="site" aria-label="Site" hidden>
       <option value="exploratory">Al Furjan, exploratory site</option>
       <option value="orchid">Orchid by Azizi (apartment candidate)</option>
       <option value="verdes">Verdes by Haven (community candidate)</option>
@@ -260,8 +298,6 @@ footer{font-size:12px;color:var(--faint);margin-top:22px}
   </div>
   <p class="site-line" id="siteLine"></p>
 
-  <div class="grid">
-    <div class="leftcol">
     <section class="card" aria-label="Historical imagery">
       <div class="head"><h2 id="imageTitle">Historical imagery</h2><span class="unit" id="imgCount"></span></div>
       <div class="img-note">
@@ -286,16 +322,21 @@ footer{font-size:12px;color:var(--faint);margin-top:22px}
       <div class="strip" id="strip" aria-label="Captured dates"></div>
       <p class="img-note" id="imgNote"></p>
     </section>
+</section>
+      <div id="archiveTop"></div>
+    </div>
+    <div id="constructionCase" class="more" aria-live="polite"></div>
+  </div>
+  <section id="projectCharts" aria-label="Satellite charts">
+    <div id="legacyCharts">
     <section class="card insight" aria-live="polite">
       <h2>Measurements and visible changes</h2>
       <div id="insight"></div>
     </section>
-    </div>
-
     <div class="charts">
       <section class="card">
         <div class="head"><h2>Sentinel-1 radar</h2><span class="unit">echo strength, dB<span class="has-tip" tabindex="0" role="button" aria-label="More info" data-tip="Decibels measure how strong the echo is. Values closer to 0 mean a stronger echo; more negative means weaker. A change of 3 dB is roughly double or half the strength."></span></span></div>
-        <div class="legend"><span><i style="background:var(--accent)"></i>VV polarisation<span class="has-tip" tabindex="0" role="button" aria-label="More info" data-tip="VV measures vertically transmitted and vertically received radar backscatter."></span></span><span><i style="background:var(--vh)"></i>VH polarisation<span class="has-tip" tabindex="0" role="button" aria-label="More info" data-tip="VH measures vertically transmitted and horizontally received radar backscatter."></span></span><span><i style="background:repeating-linear-gradient(90deg,#1d2329 0 4px,transparent 4px 7px)"></i>VV, 3-month median<span class="has-tip" tabindex="0" role="button" aria-label="More info" data-tip="The middle value of the last three months. It smooths out month-to-month noise so the real trend is easier to see."></span></span><span class="cap">▲ Image capture · ◆ Stage evidence<span class="has-tip" tabindex="0" role="button" aria-label="More info" data-tip="Triangles mark imagery dates. Diamonds mark reviewed stages with dated evidence."></span></span></div>
+        <div class="legend"><span>Blue: VV</span><span>Brown: VH</span><span id="radarSmoothing">Dashed: VV rolling 3-month median</span><span class="cap">▲ Image capture · ◆ Stage evidence</span></div>
         <svg id="radarChart" class="plot" viewBox="0 0 640 220" role="img" tabindex="0" aria-label="Monthly Sentinel-1 radar. Click to pick a month."></svg>
         <div class="read"><div><b id="radarValue">–</b><div class="sub" id="radarDelta"></div></div><div class="r"><span id="radarScenes"></span><div class="sub" id="radarCells"></div></div></div>
         <p class="explain"><b>Radar measures reflected microwave energy. Check changes against the imagery and the measurement area.</b></p>
@@ -314,8 +355,10 @@ footer{font-size:12px;color:var(--faint);margin-top:22px}
         <p class="explain"><b id="opticalExplain"></b></p>
       </section>
     </div>
-  </div>
-
+    </div>
+    <div id="additionalCharts"></div>
+  </section>
+  <div id="projectStages">
   <details class="more" open id="stageBox">
     <summary>Construction stages and dated evidence</summary>
     <p id="stageLead"></p>
@@ -327,6 +370,25 @@ footer{font-size:12px;color:var(--faint);margin-top:22px}
     <div class="ctx-grid" id="contextGrid"></div>
     <p><a href="earthengine-demo.js" download>Download the three-site Earth Engine script</a> · <a href="https://code.earthengine.google.com/" target="_blank" rel="noopener">Open Earth Engine</a>. Paste and run the script, select a site and move the year slider to compare Sentinel-2 composites.</p>
     <p>Imagery dates are from Esri metadata at the view centre. The three original charts use Earth Engine. Jebel Ali Village uses sampled Sentinel-2 scenes from Microsoft Planetary Computer.</p>
+  </details>
+  </div>
+  <div id="archiveBelow"><details class="more" id="archiveBrowser">
+    <summary id="archiveSummary">More historical imagery</summary>
+    <div id="archiveIndex"></div>
+  </details></div>
+  <details class="more">
+    <summary>Compare projects</summary>
+    <p><label for="compareProject">Compare with</label>
+      <select id="compareProject"><option value="">Choose another project</option></select></p>
+    <div id="projectComparison" class="project-cases" aria-live="polite"></div>
+  </details>
+  <details class="more">
+    <summary>Forecast and weather scenarios</summary>
+    <div id="projectForecast"></div>
+  </details>
+  <details class="more">
+    <summary>Buyer notes and checklists</summary>
+    <div id="buyerTools"></div>
   </details>
 </section>
 
@@ -370,7 +432,7 @@ footer{font-size:12px;color:var(--faint);margin-top:22px}
   <p>Draw real site boundaries, label construction phases by hand from the imagery, add more control sites, then test whether a model can beat the simple "time since start" baseline.</p>
 
   <h2>Credits</h2>
-  <p>Team Origin, CSIT321. Imagery: Google Earth (Maxar Technologies, Airbus, CNES/Airbus), Copernicus Sentinel data processed in Google Earth Engine. Built with help from AI coding assistants; data checks and conclusions are the team's.</p>
+  <p>Team Origin: Elan Venatius Sequeira, Rayyan Shehran, Aayush Hariharan. Imagery: Google Earth (Maxar Technologies, Airbus, CNES/Airbus), Copernicus Sentinel data processed in Google Earth Engine. Built with help from AI coding assistants; data checks and conclusions are the team's.</p>
 </section>
 
 <footer id="footer"></footer>
@@ -402,10 +464,10 @@ const STAGES = {
       ['Baseline site conditions', '2022-02-25', 'Open land is visible beside existing apartment blocks.'],
       ['Site preparation', null, 'Confirm the cleared footprint against a dated site plan.'],
       ['Excavation', '2026-06-07', 'Excavated areas are visible in the wider scene by this date. The project assignment is pending.'],
-      ['Foundations', null, 'Use an inspection record or a clearer view of foundation works.'],
+      ['Substructure and foundations', null, 'Use an inspection record or a clearer view of foundation works.'],
       ['Superstructure', '2026-06-07', 'Additional structural forms are visible compared with February 2022. Their start dates fall within the image interval.'],
       ['Envelope and roof', null, 'Identify the specific new building and verify roof or façade coverage.'],
-      ['Fit-out and handover', null, 'Use contractor or handover records for this stage.'],
+      ['Building services, finishes and handover', null, 'Check contractor reports, completion certification and handover records separately.'],
     ],
   },
   orchid: {
@@ -415,9 +477,9 @@ const STAGES = {
       ['Excavation', null, 'Earlier imagery or contractor records needed.'],
       ['Foundations', null, 'Earlier imagery or inspection records needed.'],
       ['Superstructure', null, 'The archive does not establish when the frame rose.'],
-      ['Roof visible', '2019-08-29', 'Apartment roofs are visible in this capture and in the 2016 baseline.'],
+      ['Roof and exterior enclosure', '2019-08-29', 'Apartment roofs are visible in this capture and in the 2016 baseline. Façade completion is unverified.'],
       ['External works', '2025-11-23', 'Surrounding roads and landscaping are visible. Their dates and parcel assignment need separate verification.'],
-      ['Reported completion', null, 'The DLD snapshot reports Finished. Handover and plot alignment remain unverified.'],
+      ['Registry reports finished', null, 'DLD project 1513 reports Finished and 100%. Handover and plot alignment remain unverified.'],
     ],
   },
   verdes: {
@@ -436,12 +498,12 @@ const STAGES = {
     type: 'Villa redevelopment · Jebel Ali Village area',
     rows: [
       ['Pre-redevelopment baseline', '2022-09-21', 'Earlier housing and the central amenity are visible.'],
-      ['Clearance and site layout', '2024-01-22', 'Open work areas and a changed layout are visible compared with September 2022.'],
+      ['Enabling works and grading', '2024-01-22', 'Open work areas and a changed layout are visible compared with September 2022.'],
       ['Foundations', null, 'Confirm foundations separately for each villa plot.'],
-      ['Villa structures', '2024-01-22', 'New rows of building forms are visible around the central amenity.'],
+      ['Villa superstructure', '2024-01-22', 'New rows of building forms are visible around the central amenity.'],
       ['Villa roofs', '2025-11-23', 'Rows of roofed villas are visible by November 2025.'],
       ['Roads and external works', '2025-11-23', 'Paved road alignments are visible through the villa rows.'],
-      ['Finishing and handover', null, 'Nakheel announced the start of community handovers on 17 August 2026. Individual villa delivery dates require separate records.',
+      ['Phased handover', null, 'Nakheel announced the start of community handovers on 17 August 2026. Individual villa delivery dates require separate records.',
         'https://www.nakheel.com/en/media-centre/press-releases/news-detail/2026/08/17/nakheel-begins-handover-of-892-homes-at-jebel-ali-village'],
     ],
   },
@@ -469,7 +531,9 @@ function ago(days) {
 const X0 = 46, X1 = 626, Y0 = 26, Y1 = 180;
 function drawChart(svgId, series, opts) {
   const svg = $(svgId); svg.replaceChildren();
-  const [first, last] = timelineBounds();
+  svg.onclick = null;
+  svg.onkeydown = null;
+  const [first, last] = opts.bounds || timelineBounds();
   const span = Math.max(1, last - first), x = i => X0 + (i - first) / span * (X1 - X0);
   const vals = series.flatMap(l => l.values.slice(first, last + 1)).filter(num);
   if (!vals.length) {
@@ -477,6 +541,7 @@ function drawChart(svgId, series, opts) {
     t.textContent = 'No valid measurements for this site'; svg.append(t); return;
   }
   let lo = Math.min(...vals), hi = Math.max(...vals);
+  if (opts.zero) { lo = Math.min(0, lo); hi = Math.max(0, hi); }
   if (opts.step) { lo = Math.floor(lo / opts.step) * opts.step; hi = Math.ceil(hi / opts.step) * opts.step; }
   else { const pad = Math.max((hi - lo) * 0.12, 0.005); lo -= pad; hi += pad; }
   if (lo === hi) { lo -= 1; hi += 1; }
@@ -508,14 +573,39 @@ function drawChart(svgId, series, opts) {
     const title = s('title', {}); title.textContent = label + ' · ' + dayName(date);
     mark.append(title); svg.append(mark);
   }
+  if (opts.zero && lo <= 0 && hi >= 0) {
+    svg.append(s('line', {x1: X0, x2: X1, y1: y(0), y2: y(0), stroke: '#5a625c'}));
+  }
   for (const l of series) {
-    if (opts.sparse) l.values.forEach((v, i) => {
-      if (i >= first && i <= last && num(v)) svg.append(s('circle', {cx: x(i), cy: y(v), r: 3, fill: '#1f5c8a'}));
+    if (opts.bars) {
+      l.values.forEach((v, i) => {
+        if (i < first || i > last || !num(v)) return;
+        const top = Math.min(y(v), y(0));
+        const width = Math.max(2, (X1 - X0) / (span + 1) * .7);
+        const bar = s('rect', {x: x(i) - width / 2, y: top, width,
+          height: Math.max(1, Math.abs(y(v) - y(0))), fill: v < 0 ? '#93541f' : '#17695a'});
+        const label = s('title', {});
+        label.textContent = monthName(months[i]) + ' · ' + v.toFixed(2) + ' dB';
+        bar.append(label); svg.append(bar);
+      });
+      continue;
+    }
+    l.values.forEach((v, i) => {
+      if (i < first || i > last || !num(v)) return;
+      if (!opts.sparse && (num(l.values[i - 1]) || num(l.values[i + 1]))) return;
+      const dot = s('circle', {cx: x(i), cy: y(v), r: 3.5, fill: l.color});
+      const date = l.dates?.get(months[i]);
+      const title = s('title', {});
+      title.textContent = (date ? dayName(date) : monthName(months[i])) + ' · ' + (l.label || '') + ' ' + v.toFixed(3);
+      dot.append(title);
+      svg.append(dot);
     });
+    if (opts.sparse) continue;
     let d = '', pen = false;
     l.values.forEach((v, i) => { if (i < first || i > last || !num(v)) { pen = false; return; } d += (pen ? 'L' : 'M') + x(i).toFixed(1) + ',' + y(v).toFixed(1); pen = true; });
     svg.append(s('path', { d, fill: 'none', stroke: l.color, 'stroke-width': l.width || 1.6, 'stroke-dasharray': l.dash || '', 'stroke-linejoin': 'round' }));
   }
+  if (opts.standalone) return;
   svg.append(s('line', { x1: x(idx), x2: x(idx), y1: Y0 - 6, y2: Y1, stroke: '#1d2329', 'stroke-width': 1, 'stroke-dasharray': '3 3' }));
   for (const l of series) { const v = l.values[idx]; if (num(v) && !l.dash) svg.append(s('circle', { cx: x(idx), cy: y(v), r: 3.5, fill: l.color, stroke: '#fff', 'stroke-width': 1.5 })); }
 
@@ -648,7 +738,7 @@ function renderImage() {
   $('imageEmpty').textContent = period && period.chosen ?
     'No Esri capture in this ' + $('cadence').value + ' (' + dayName(period.chosen.first) +
     ' to ' + dayName(new Date(Date.parse(period.chosen.stop) - 86400000).toISOString().slice(0, 10)) + ').' :
-    frames.length ? 'No saved capture on or before the selected month.' : 'Historical archive images are not included in this source release.';
+    'No saved capture on or before the selected month.';
   note.replaceChildren();
   if (shown) {
     if (img.dataset.date !== site + selectedLayer + shown.date) {
@@ -709,7 +799,6 @@ function renderImage() {
     strip.append(button);
   }
   $('play').disabled = frames.length < 2;
-  $('latest').disabled = !frames.length;
 }
 function updateImageLayer() {
   const village = site === 'village';
@@ -767,7 +856,7 @@ function render() {
     { values: vv, color: '#1f5c8a' },
     { values: vh, color: '#b07a3e', width: 1.3 },
     { values: vvMed, color: '#1d2329', width: 1.6, dash: '4 3' },
-  ], { step: 5, captures: caps, stages });
+  ], { step: 5, captures: caps, stages, sparse: site === 'village' });
 
   const key = $('metric').value, M = METRICS[key];
   const ov = months.map(k => S.optical.get(k)?.[key + '_mean'] ?? null);
@@ -778,11 +867,14 @@ function render() {
   ], { captures: caps, stages, sparse: site === 'village' });
 
   const r = S.radar.get(m), o = S.optical.get(m);
+  $('radarSmoothing').textContent = site === 'village'
+    ? 'Sentinel-1 RTC · one October acquisition per year'
+    : 'Dashed: VV rolling 3-month median';
   const base = median(vv.filter((_, i) => months[i].startsWith('2018-')));
   if (r && num(r.VV_mean)) {
     $('radarValue').textContent = 'VV ' + r.VV_mean.toFixed(1) + ' dB, VH ' + (num(r.VH_mean) ? r.VH_mean.toFixed(1) : '–') + ' dB';
-    const dlt = r.VV_mean - base;
-    $('radarDelta').textContent = (dlt >= 0 ? '+' : '') + dlt.toFixed(1) + ' dB VV compared with the 2018 median';
+    const dlt = num(base) ? r.VV_mean - base : null;
+    $('radarDelta').textContent = dlt === null ? '' : (dlt >= 0 ? '+' : '') + dlt.toFixed(1) + ' dB VV compared with the 2018 median';
   } else { $('radarValue').textContent = 'No radar data this month'; $('radarDelta').textContent = ''; }
   $('radarScenes').textContent = (r?.image_count ?? 0) + ' scenes';
   $('radarCells').textContent = (r?.VV_count ?? 0) + ' sample points';
@@ -795,7 +887,8 @@ function render() {
   $('opticalCells').textContent = (o?.[key + '_count'] ?? 0) +
     (site === 'village' ? ' valid 10 m grid samples' : ' clear 20 m samples');
   if (site === 'village') {
-    $('radarValue').textContent = 'Radar extraction pending for this area';
+    if (!r) $('radarValue').textContent = 'No sampled radar scene this month';
+    $('radarScenes').textContent = r?.date ? dayName(r.date) : 'No sampled scene';
     $('opticalExplain').textContent = 'One selected October scene per year. Each dot is a sampled NDVI observation.';
     $('opticalScenes').textContent = o?.date ? dayName(o.date) : 'No sampled scene this month';
   }
@@ -868,8 +961,19 @@ function renderStages() {
     row.append(el('strong', label), document.createTextNode(' · '));
     if (date) {
       const button = el('button', dayName(date), 'linkbtn');
-      button.onclick = () => jumpToDate(date);
+      button.onclick = () => {
+        jumpToDate(date);
+        $('imageTitle').scrollIntoView({block: 'nearest'});
+      };
       row.append(button);
+      const frame = archiveFrames(site).find(capture => capture.date === date);
+      if (frame) {
+        const photo = el('img', undefined, 'milestone-photo');
+        photo.src = frame.image;
+        photo.alt = 'Archive view from ' + dayName(date);
+        photo.loading = 'lazy';
+        row.append(photo);
+      }
     } else {
       row.append(el('span', source ? 'Developer report' : 'Unverified'));
     }
@@ -952,8 +1056,505 @@ function filterRegistry() {
 }
 
 function showView(v) {
-  for (const k of ['overview', 'timeline', 'registry', 'notes']) $('view-' + k).hidden = k !== v;
-  for (const b of document.querySelectorAll('[data-view]')) b.setAttribute('aria-selected', String(b.dataset.view === v));
+  for (const k of ['overview', 'construction', 'registry', 'notes']) $('view-' + k).hidden = k !== v;
+  for (const b of document.querySelectorAll('[role="tab"][data-view]')) b.setAttribute('aria-selected', String(b.dataset.view === v));
+}
+
+const buyerStateKey = 'milestone-buyer-workspace-v1';
+let buyerState = {};
+try { buyerState = JSON.parse(localStorage.getItem(buyerStateKey) || '{}') || {}; } catch {}
+
+function renderForecast(project, record) {
+  const box = $('projectForecast');
+  box.replaceChildren();
+  const outcomes = {
+    orchid: ['DLD reports finished', record?.completion_field],
+    village: ['Developer reports handovers began', '2026-08-17'],
+    mall: ['Developer reports public opening', '2022-02-17']
+  };
+  const outcome = outcomes[project.site] || (project.type === 'Mall' ? outcomes.mall : null);
+  if (outcome) {
+    box.append(el('p', outcome[0] + (outcome[1] ? ' · ' + dayName(outcome[1]) : '') + '.'),
+      el('p', 'Use this recorded milestone when evaluating an earlier forecast.'));
+    return;
+  }
+  box.append(el('p', 'Scenario calculator · Adjust the planned end by the assumed net delay. A trained forecast and site weather history are unavailable.'));
+  const plan = el('input');
+  plan.type = 'date';
+  plan.value = record?.planned_end || '';
+  const planLabel = el('label', record?.planned_end ? 'Planned end (prefilled from DLD)' : 'Planned end (enter a reference date)');
+  planLabel.append(plan);
+  const controls = el('div', undefined, 'project-controls forecast-controls');
+  controls.append(planLabel);
+  const factors = ['Heat', 'Rain or flooding', 'Wind or dust', 'Other delays'];
+  const inputs = factors.map(factor => {
+    const label = el('label', factor + ' (days)');
+    const input = el('input');
+    input.type = 'number'; input.min = '0'; input.max = '365'; input.step = '1'; input.value = '0';
+    label.append(input);
+    controls.append(label);
+    return input;
+  });
+  const help = el('p', 'Enter additional calendar days that move the planned end. Count overlapping delays once and exclude time already allowed for in the schedule.');
+  const result = el('p');
+  result.setAttribute('role', 'status');
+  const chart = el('ul', undefined, 'forecast-chart');
+  chart.setAttribute('aria-label', 'Scenario delay days by factor');
+  function update() {
+    chart.replaceChildren();
+    if (inputs.some(input => !input.validity.valid || input.value === '')) {
+      result.textContent = 'Enter whole days from 0 to 365 for each factor.';
+      return;
+    }
+    const values = inputs.map(input => input.valueAsNumber);
+    const days = values.reduce((total, value) => total + value, 0);
+    for (const [index, value] of values.entries()) {
+      const row = el('li');
+      const bar = el('meter');
+      bar.min = 0; bar.max = Math.max(1, ...values); bar.value = value;
+      bar.setAttribute('aria-label', factors[index] + ' assumed delay');
+      row.append(el('span', factors[index]), bar, el('span', value + ' d'));
+      chart.append(row);
+    }
+    const base = plan.valueAsNumber;
+    result.textContent = Number.isFinite(base) ?
+      'Scenario end: ' + dayName(new Date(base + days * 86400000).toISOString().slice(0, 10)) + ' (+' + days + ' days).' :
+      'Total assumed delay: ' + days + ' days. Enter a planned end to calculate a scenario date.';
+  }
+  plan.oninput = update;
+  for (const input of inputs) input.oninput = update;
+  box.append(controls, help, result, chart);
+  update();
+}
+
+function renderBuyerTools(project, record) {
+  const state = buyerState[project.name] ||= {};
+  const container = $('buyerTools');
+  container.replaceChildren(el('p', 'Saved on this browser. Use the source records to check dates and progress.'));
+  const status = el('p');
+  status.setAttribute('role', 'status');
+  function save() {
+    try {
+      localStorage.setItem(buyerStateKey, JSON.stringify(buyerState));
+      status.textContent = 'Saved on this browser.';
+    } catch { status.textContent = 'Browser storage is unavailable. Changes last until this page closes.'; }
+  }
+  const picker = $('savedProjects');
+  function updateSaved() {
+    picker.replaceChildren(new Option('Open a saved project', ''));
+    for (const p of data.construction.projects) {
+      if (buyerState[p.name]?.follow) picker.add(new Option(p.name, p.name));
+    }
+  }
+  const follow = el('button', state.follow ? 'Remove from saved projects' : 'Save project');
+  follow.onclick = () => {
+    state.follow = !state.follow;
+    follow.textContent = state.follow ? 'Remove from saved projects' : 'Save project';
+    updateSaved();
+    save();
+  };
+  const latest = project.events.filter(event => event[0]).map(event => event[0]).sort().at(-1);
+  const capture = project.site ? archiveFrames(project.site).at(-1)?.date : null;
+  const recap = el('p');
+  function updateRecap() {
+    const newer = [latest, capture].filter(date => date && (!state.reviewed || date > state.reviewed)).sort();
+    recap.textContent = newer.length ? 'Latest evidence to review: ' + dayName(newer.at(-1)) + '.' :
+      state.reviewed ? 'No dated evidence after your last review (' + dayName(state.reviewed) + ').' :
+      'No dated project evidence to review yet.';
+  }
+  updateRecap();
+  const review = el('button', 'Mark evidence reviewed');
+  review.disabled = !latest && !capture;
+  review.onclick = () => {
+    state.reviewed = [latest, capture].filter(Boolean).sort().at(-1);
+    updateRecap();
+    save();
+  };
+  const registryDate = record?.planned_end;
+  container.append(follow, recap, review,
+    el('h4', 'Phase and surroundings'),
+    el('p', 'Verified phase boundaries are needed for phase-specific tracking. Use the dated evidence to inspect surrounding works where available.'),
+    el('h4', 'Handover dates'),
+    el('p', registryDate ? 'Registry planned end: ' + dayName(registryDate) + '. Check the handover notice for delivery.' : 'No registry planned end is linked to this project.'));
+  const quoteLabel = el('label', 'Date quoted to you ');
+  const quote = el('input');
+  quote.type = 'date'; quote.value = state.quote || '';
+  quote.onchange = () => { state.quote = quote.value; save(); };
+  quoteLabel.append(quote);
+  container.append(quoteLabel, el('h4', 'Instalment and handover checklist'));
+  for (const text of ['Record the developer’s progress evidence', 'Check the milestone against the payment schedule',
+    'Confirm the handover notice and inspection date', 'Record snagging items for follow-up']) {
+    const line = el('p'), label = el('label'), check = el('input');
+    check.type = 'checkbox';
+    check.checked = Boolean(state[text]);
+    check.onchange = () => { state[text] = check.checked; save(); };
+    label.append(check, ' ', text); line.append(label); container.append(line);
+  }
+  container.append(status);
+  updateSaved();
+}
+
+function constructionSource(key) {
+  const [label, url] = data.construction.sources[key];
+  const link = el('a', label);
+  link.href = url;
+  link.target = '_blank';
+  link.rel = 'noopener';
+  return link;
+}
+
+function projectSiteKey(project) {
+  const keys = {'Dubai Hills Mall': 'mall', 'Como Residences': 'como',
+    'Naya at District One': 'naya', 'Palm Jebel Ali · Frond F': 'frond'};
+  return project.site || keys[project.name];
+}
+
+function addVillageAnalysis(panel) {
+  const {radar, optical} = data.villageMonthly;
+  const block = el('section', undefined, 'panel');
+  block.append(el('h4', 'Jebel Ali Village · satellite analysis'),
+    el('p', 'One usable scene per month from November 2021 to October 2026. Measurements cover the same approximate 100 m square near the central amenity. The time series describes that area, not the whole community.'));
+  panel.append(block);
+  const bounds = [months.indexOf('2021-11'), months.indexOf('2026-10')];
+  const vv = new Map(radar.map(row => [row.month, row]));
+  const ndvi = new Map(optical.map(row => [row.month, row]));
+  const series = (rows, key, label, color) => ({
+    values: months.map(month => rows.get(month)?.[key] ?? null),
+    dates: new Map([...rows].map(([month, row]) => [month, row.date])), label, color
+  });
+  function chartSlot(id, title, help) {
+    const chart = s('svg', {id, viewBox: '0 0 640 212', width: '100%', role: 'img', 'aria-label': title});
+    chart.style.maxWidth = '840px';
+    block.append(el('h4', title), el('p', help, 'sub'), chart);
+    return chart;
+  }
+  chartSlot('village-radar-line', 'Radar backscatter over time (dB)', 'Blue: VV. Brown: VH. Sentinel-1 RTC, descending relative orbit 166.');
+  drawChart('village-radar-line', [
+    series(vv,'VV_mean','VV','#1f5c8a'), series(vv,'VH_mean','VH','#93541f')
+  ], {bounds, standalone: true});
+  chartSlot('village-ndvi-line', 'Vegetation index over time (NDVI)', 'Sentinel-2 L2A. Cloud and shadow classes excluded. Gaps indicate missing usable data.');
+  drawChart('village-ndvi-line', [series(ndvi,'NDVI_mean','NDVI','#17695a')], {bounds, standalone: true});
+  chartSlot('village-change-bars','Change in radar VV between consecutive months (dB)', 'Each bar subtracts the previous month’s sampled VV from the current month. A gap appears when either month is missing.');
+  const change = months.map((month,i) => {
+    const now = vv.get(month)?.VV_mean, before = vv.get(months[i-1])?.VV_mean;
+    return num(now) && num(before) ? now-before : null;
+  });
+  drawChart('village-change-bars', [{values:change, color:'#17695a'}], {bounds, standalone:true, bars:true, zero:true});
+  const scatter = chartSlot('village-scatter', 'Radar VV (dB) versus vegetation index (NDVI)', 'Each point pairs two acquisitions from the same calendar month. Open the data table for the two capture dates.');
+  const paired = optical.filter(row => vv.has(row.month));
+  if (paired.length) {
+    const xs = paired.map(row => vv.get(row.month).VV_mean), ys = paired.map(row => row.NDVI_mean);
+    const minX = Math.min(...xs), maxX = Math.max(...xs), minY = Math.min(...ys), maxY = Math.max(...ys);
+    scatter.append(s('path', {d:'M46,18 V180 H626',fill:'none',stroke:'#857e6b'}));
+    for (let i=0;i<=4;i++) {
+      const t=i/4;
+      const xLabel=s('text',{x:46+t*580,y:200,'text-anchor':'middle','font-size':12});
+      const yLabel=s('text',{x:40,y:184-t*162,'text-anchor':'end','font-size':12});
+      xLabel.textContent=(minX+t*(maxX-minX)).toFixed(1);
+      yLabel.textContent=(minY+t*(maxY-minY)).toFixed(2);
+      scatter.append(xLabel,yLabel);
+    }
+    paired.forEach((row,i) => {
+      const dot=s('circle',{cx:46+580*(xs[i]-minX)/(maxX-minX||1),cy:180-162*(ys[i]-minY)/(maxY-minY||1),r:4.5,fill:'#17695a',opacity:.8});
+      const tip=s('title',{});
+      tip.textContent=dayName(vv.get(row.month).date)+' radar: '+xs[i].toFixed(2)+' dB · '+dayName(row.date)+' optical: '+ys[i].toFixed(3);
+      dot.append(tip);scatter.append(dot);
+    });
+  } else block.append(el('p','No months have both a valid radar and optical sample.'));
+  const grids = optical.filter(row => row.NDVI_grid);
+  if (grids.length) {
+    const label = el('label','NDVI heatmap capture ');
+    const select = el('select');
+    for (const row of grids) select.append(new Option(dayName(row.date),row.date));
+    select.value=grids.at(-1).date;label.append(select);
+    const heat = s('svg',{id:'village-heatmap',viewBox:'0 0 260 244',width:'260',role:'img','aria-label':'NDVI grid, north at top'});
+    heat.style.maxWidth='100%';
+    const legend = el('p','North is up. Brown: −0.2 or below. Pale: 0.0. Green: +0.4 or above. Gray: masked. The color range is fixed across dates.','sub');
+    const link = el('a','Open Sentinel-2 scene');link.target='_blank';link.rel='noopener';
+    const ramp = [[145,78,43],[247,235,204],[20,103,83]];
+    function paintHeat() {
+      const row = grids.find(item => item.date===select.value);
+      heat.replaceChildren();link.href=row.source;
+      row.NDVI_grid.forEach((line,y)=>line.forEach((v,x)=>{
+        const left = v<0 ? 0 : 1;
+        const t = Math.max(0,Math.min(1,v<0 ? (v+.2)/.2 : v/.4));
+        const fill = num(v) ? 'rgb('+ramp[left].map((n,i)=>Math.round(n+t*(ramp[left+1][i]-n))).join(',')+')' : '#aeb4b3';
+        const cell=s('rect',{x:20+x*22,y:8+y*22,width:21,height:21,fill});
+        const tip=s('title',{});tip.textContent=num(v)?'NDVI '+v.toFixed(3):'Masked';cell.append(tip);heat.append(cell);
+      }));
+    }
+    select.onchange=paintHeat;paintHeat();
+    block.append(el('h4','Optical heatmap · 10 × 10 sampled grid'),label,legend,heat,el('br'),link);
+  }
+  const detail=el('details');
+  const table=el('table'), rows=el('tbody');
+  const header=el('tr');
+  for (const key of ['Month','Radar date','VV (dB)','VH (dB)','Optical date','NDVI']) header.append(el('th',key));
+  const head=el('thead');head.append(header);table.append(head,rows);
+  const csvRows=[['month','radar_date','VV_dB','VH_dB','radar_source','optical_date','NDVI','optical_source']];
+  for (const month of months.slice(bounds[0],bounds[1]+1)) {
+    const r=vv.get(month),o=ndvi.get(month),tr=el('tr');
+    tr.append(el('td',month));
+    function openScene(row) {
+      const td=el('td',row ? '' : '—');
+      if (row) {const link=el('a',dayName(row.date));link.href=row.source;link.target='_blank';link.rel='noopener';td.append(link);}
+      return td;
+    }
+    tr.append(openScene(r),el('td',r?.VV_mean.toFixed(3) ?? '—'),el('td',r?.VH_mean.toFixed(3) ?? '—'),
+      openScene(o),el('td',o?.NDVI_mean.toFixed(3) ?? '—'));
+    rows.append(tr);
+    csvRows.push([month,r?.date,r?.VV_mean,r?.VH_mean,r?.source,o?.date,o?.NDVI_mean,o?.source]);
+  }
+  const csvLink=el('a','Download Village chart data (CSV)');
+  csvLink.href='data:text/csv;charset=utf-8,'+encodeURIComponent(csvRows.map(row=>row.join(',')).join('\n'));
+  csvLink.download='milestone-jebel-ali-village-sentinel.csv';
+  const scroll=el('div');scroll.style.overflow='auto';scroll.append(table);
+  detail.append(el('summary','Capture dates, values and scene links'),scroll);
+  block.append(el('p', radar.length+' radar scenes · '+optical.length+' optical scenes · '+paired.length+' paired months'),csvLink,detail);
+}
+
+function addSampledCharts(panel, siteKey) {
+  const sampled = data.sampled[siteKey];
+  if (!sampled) return;
+  const block = el('section');
+  block.className = 'panel';
+  block.append(el('h4', 'Measured satellite observations · October samples'),
+    el('p', 'One usable acquisition per sensor per year where available. Dots are actual sampled scenes. The approximately 100 m square is centered on the archive map point and does not represent a verified parcel or the entire development.'));
+  for (const [kind, fields, title] of [
+    ['radar', [['VV_mean', 'VV', '#1f5c8a'], ['VH_mean', 'VH', '#93541f']], 'Sentinel-1 RTC radar · VV and VH (dB)'],
+    ['optical', [['NDVI_mean', 'NDVI', '#17695a']], 'Sentinel-2 L2A optical · NDVI (unitless)']
+  ]) {
+    const rows = sampled[kind];
+    block.append(el('h4', title));
+    if (!rows.length) {
+      block.append(el('p', 'No valid observations in the sampled dates.'));
+      continue;
+    }
+    const chartId = 'sampled-' + kind;
+    const svg = s('svg', {id: chartId, viewBox: '0 0 640 210', width: '100%', role: 'img', 'aria-label': title});
+    svg.style.maxWidth = '840px';
+    const desc = el('p', kind === 'radar' ? 'Blue: VV. Brown: VH. Descending relative orbit 166.' : 'NDVI samples exclude cloud and shadow classes.');
+    const details = el('details');
+    details.append(el('summary', 'Acquisition dates, values and source scenes (' + rows.length + ')'));
+    const list = el('ul');
+    for (const row of rows) {
+      const a = el('a', dayName(row.date));
+      a.href = row.source; a.target = '_blank'; a.rel = 'noopener';
+      const li = el('li');
+      li.append(a, document.createTextNode(' · ' + fields.map(([key,label]) => label + ' ' + row[key].toFixed(3)).join(' · ')));
+      list.append(li);
+    }
+    details.append(list); block.append(desc, svg, details);
+    panel.append(block);
+    const byMonth = new Map(rows.map(row => [row.month, row]));
+    const dates = new Map(rows.map(row => [row.month, row.date]));
+    const bounds = [months.indexOf(rows[0].month), months.indexOf(rows.at(-1).month)];
+    drawChart(chartId, fields.map(([key,label,color]) => ({
+      values: months.map(month => byMonth.get(month)?.[key] ?? null), label, color, dates
+    })), {bounds, standalone: true, sparse: true});
+  }
+}
+
+function renderArchiveIndex(project) {
+  const indexed = data.waybackIndex[projectSiteKey(project)];
+  const panel = $('archiveIndex');
+  $('archiveSummary').textContent = indexed ?
+    'Explore Esri and Google Earth · ' + indexed.captures.length + ' Esri dates indexed' :
+    'Explore historical imagery';
+  panel.replaceChildren();
+  if (!indexed) {
+    panel.append(el('p', 'A location-specific archive index is pending.'));
+    return;
+  }
+  const [lon, lat] = indexed.centre;
+  const earth = el('a', 'Check this location in Google Earth');
+  earth.href = 'https://earth.google.com/web/search/' + encodeURIComponent(lat + ', ' + lon);
+  earth.target = '_blank'; earth.rel = 'noopener';
+  const links = el('p');
+  links.append(earth);
+  if (indexed.locationSource) {
+    const location = el('a', 'Map location source');
+    location.href = indexed.locationSource;
+    location.target = '_blank'; location.rel = 'noopener';
+    links.append(' · ', location);
+  }
+  panel.append(links, el('p', 'Dates describe imagery at the map centre. Views can cover neighbouring areas. Esri’s viewer needs an internet connection.'));
+  panel.append(el('p', 'Largest successful sweep: ' + (indexed.checked - indexed.failures) +
+    ' of 198 release records checked at this location.'));
+  const cached = project.site ? archiveFrames(project.site) : [];
+  const dates = new Set(indexed.captures.map(frame => frame.date));
+  const entries = [...indexed.captures, ...cached.filter(frame => !dates.has(frame.date))
+    .map(frame => ({...frame, cachedOnly: true}))]
+    .sort((a, b) => a.date.localeCompare(b.date));
+  if (indexed.captures.length) {
+    const controls = el('div', undefined, 'project-controls');
+    const label = el('label', 'Esri capture date');
+    const picker = el('select');
+    for (const frame of indexed.captures) picker.add(new Option(dayName(frame.date), frame.url));
+    picker.selectedIndex = picker.options.length - 1;
+    label.append(picker);
+    const display = el('button', 'Show Esri image');
+    const previous = el('button', 'Previous capture');
+    const next = el('button', 'Next capture');
+    const viewer = el('div');
+    function updateNavigation() {
+      previous.disabled = picker.selectedIndex === 0;
+      next.disabled = picker.selectedIndex === picker.options.length - 1;
+    }
+    function show() {
+      const iframe = el('iframe', undefined, 'archive-viewer');
+      iframe.title = 'Esri Wayback imagery viewer';
+      iframe.src = picker.value;
+      viewer.replaceChildren(iframe);
+      updateNavigation();
+    }
+    display.onclick = show;
+    picker.onchange = () => { if (viewer.childNodes.length) show(); else updateNavigation(); };
+    previous.onclick = () => { picker.selectedIndex -= 1; show(); };
+    next.onclick = () => { picker.selectedIndex += 1; show(); };
+    updateNavigation();
+    controls.append(label, display, previous, next);
+    panel.append(controls, viewer);
+  }
+  const list = el('ol');
+  for (const frame of entries) {
+    const row = el('li');
+    if (frame.cachedOnly) {
+      row.append(dayName(frame.date) + ' · ' + (frame.item ? 'Esri Wayback' : 'Google Earth') +
+        ' · ' + (frame.provider || 'Imagery partners'));
+    } else {
+      const link = el('a', dayName(frame.date) + ' · Esri Wayback');
+      link.href = frame.url;
+      link.target = '_blank'; link.rel = 'noopener';
+      row.append(link, ' · ' + (frame.provider || 'Imagery partners') +
+        (Number(frame.resolution) > 0 ? ' · ' + frame.resolution + ' m source resolution' : ''));
+    }
+    if (cached.some(capture => capture.date === frame.date)) {
+      const button = el('button', 'View in timeline', 'linkbtn');
+      button.onclick = () => {
+        jumpToDate(frame.date);
+        $('imageTitle').scrollIntoView({block: 'nearest'});
+      };
+      row.append(' · ', button);
+    }
+    list.append(row);
+  }
+  panel.append(list);
+}
+
+function renderConstruction(preferred) {
+  const {projects, profiles} = data.construction;
+  const type = $('projectType').value;
+  const choices = projects.filter(project => !type || project.type === type);
+  const selected = choices.find(project => project.name === preferred) || choices[0];
+  const compare = $('compareProject');
+  const previousComparison = compare.value;
+  compare.replaceChildren(new Option('Choose another project', ''));
+  for (const project of projects) {
+    if (project !== selected) compare.add(new Option(project.name, project.name));
+  }
+  compare.value = previousComparison === selected.name ? '' : previousComparison;
+  function renderComparison() {
+    const area = $('projectComparison');
+    area.replaceChildren();
+    const other = projects.find(project => project.name === compare.value);
+    if (!other) return;
+    for (const project of [selected, other]) {
+      const article = el('article');
+      article.append(el('h4', project.name), el('p', project.stage));
+      const list = el('ul');
+      for (const [date, kind, , source] of project.events) {
+        const row = el('li', (date ? dayName(date) : 'Date unavailable') + ' · ' + kind + ' · ');
+        row.append(constructionSource(source));
+        list.append(row);
+      }
+      article.append(list);
+      area.append(article);
+    }
+  }
+  compare.onchange = renderComparison;
+  renderComparison();
+  const names = $('projectName');
+  names.replaceChildren(...choices.map(project => new Option(project.name, project.name)));
+  names.value = selected.name;
+
+  const panel = $('constructionCase');
+  const heading = el('h3', selected.name);
+  heading.id = 'constructionHeading';
+  heading.tabIndex = -1;
+  panel.replaceChildren(heading, el('p', selected.stage, 'sub'));
+  const actions = el('p');
+  stop();
+  $('projectTimeline').hidden = !selected.site;
+  if (selected.site) {
+    $('site').value = selected.site;
+    $('site').onchange();
+  } else {
+    actions.append('Choose a dated capture in the archive. The sampled satellite charts are below. Parcel boundaries are unverified.');
+  }
+  let record;
+  if (selected.registry) {
+    record = data.registry.projects.find(row => row.number === selected.registry);
+    if (record) panel.append(el('p', 'DLD ' + record.number + ' · ' +
+      record.status.replace(/_/g, ' ') + ' · ' + Number(record.reported_percent).toFixed(2) + '% reported'));
+    const button = el('button', 'Open DLD snapshot', 'linkbtn');
+    button.onclick = () => {
+      $('search').value = record.number;
+      $('status').value = '';
+      $('check').value = '';
+      showRecord(record);
+      showView('registry');
+      $('search').focus();
+    };
+    if (record) actions.append(' · ', button);
+  }
+  if (actions.childNodes.length) panel.append(actions);
+  const analysis = $('additionalCharts');
+  analysis.replaceChildren();
+  const siteKey = projectSiteKey(selected);
+  const isVillage = siteKey === 'village';
+  $('legacyCharts').hidden = !selected.site || isVillage;
+  $('stageBox').hidden = !selected.site;
+  $('contextBox').hidden = !selected.site;
+  const archive = $('archiveBrowser');
+  (selected.site ? $('archiveBelow') : $('archiveTop')).append(archive);
+  archive.open = !selected.site;
+  if (isVillage) addVillageAnalysis(analysis);
+  else addSampledCharts(analysis, siteKey);
+  if (selected.events.length) panel.append(el('h4', 'Project evidence'));
+  const events = el('ul');
+  for (const [date, kind, note, source] of selected.events) {
+    const row = el('li');
+    row.append(el('strong', (date ? dayName(date) : 'Date unavailable') + ' · ' + kind),
+      el('p', note), constructionSource(source));
+    events.append(row);
+  }
+  if (selected.events.length) panel.append(events);
+
+  const profile = profiles[selected.type];
+  const guide = el('details');
+  guide.append(el('summary', selected.type + ' · Work packages and evidence needed'));
+  const list = el('ul');
+  for (const [name, evidence] of profile.milestones) {
+    const row = el('li');
+    row.append(el('strong', name), el('p', evidence));
+    list.append(row);
+  }
+  const sources = el('ul');
+  for (const key of profile.sources) {
+    const row = el('li');
+    row.append(constructionSource(key));
+    sources.append(row);
+  }
+  guide.append(list, el('h4', 'References'), sources);
+  const stageArea = $('projectStages');
+  stageArea.querySelector('#stageGuide')?.remove();
+  guide.id = 'stageGuide';
+  guide.className = 'more';
+  stageArea.insertBefore(guide, $('contextBox'));
+  renderBuyerTools(selected, record);
+  renderForecast(selected, record);
+  renderArchiveIndex(selected);
 }
 
 // ---------- tooltips (hover, keyboard focus or tap) ----------
@@ -984,11 +1585,16 @@ function showView(v) {
 // ---------- init ----------
 try {
   data = JSON.parse($('evidence').textContent);
+  data.construction.projects.push(
+    {name: 'Al Furjan exploratory area', type: 'Apartment', stage: 'Area observations · project assignment pending', site: 'exploratory', events: []},
+    {name: 'Verdes by Haven', type: 'Apartment', stage: 'Wider development observations · phase boundary pending', site: 'verdes', registry: '3189', events: []}
+  );
   months = data.months;
   for (const k of Object.keys(SITES)) {
     if (!data.radar[k] || !data.optical[k]) throw new Error('missing data for ' + k);
     bySite[k] = {
-      radar: new Map(data.radar[k].features.map(f => [f.properties.month, f.properties])),
+      radar: new Map((k === 'village' ? data.sampled.village.radar :
+        data.radar[k].features.map(f => f.properties)).map(row => [row.month, row])),
       optical: new Map(data.optical[k].features.map(f => [f.properties.month, f.properties])),
     };
   }
@@ -998,13 +1604,13 @@ try {
   $('site').onchange = () => {
     stop();
     site = $('site').value;
+    activeFrameDate = null;
+    selectedPeriod = null;
     updateImageLayer();
     for (const option of $('metric').options) option.disabled = site === 'village' && option.value !== 'NDVI';
     if (site === 'village') {
       $('metric').value = 'NDVI';
-      const latestFrame = framesFor(site).at(-1);
-      if (latestFrame) chooseFrame(latestFrame);
-      else render();
+      chooseFrame(framesFor(site).at(-1));
     } else render();
   };
   $('month').oninput = () => setMonth(Number($('month').value));
@@ -1022,8 +1628,19 @@ try {
   $('speed').onchange = () => { if (timer) { stop(); playFrames(false); } };
   $('play').onclick = () => { if (timer) stop(); else playFrames(true); };
   for (const b of document.querySelectorAll('[data-view]')) b.onclick = () => showView(b.dataset.view);
+  for (const type of Object.keys(data.construction.profiles)) {
+    $('projectType').append(el('option', type));
+  }
+  $('projectType').onchange = () => renderConstruction();
+  $('projectName').onchange = () => renderConstruction($('projectName').value);
+  $('savedProjects').onchange = () => {
+    const name = $('savedProjects').value;
+    if (!name) return;
+    $('projectType').value = '';
+    renderConstruction(name);
+  };
   for (const id of ['search', 'status', 'check']) $(id).oninput = filterRegistry;
-  $('goTimeline').onclick = () => { showView('timeline'); window.scrollTo(0, 0); };
+  $('goTimeline').onclick = () => { showView('construction'); window.scrollTo(0, 0); };
 
   const P = data.registry.projects, meta = data.registry.meta;
   for (const st of [...new Set(P.map(r => r.status))].sort()) {
@@ -1033,15 +1650,13 @@ try {
   for (const [n, label] of [[meta.project_rows.toLocaleString('en'), 'projects in registry'], [meta.land_rows.toLocaleString('en'), 'land records'], [meta.furjan_rows, 'Al Furjan projects'], [P.length - review, 'linked, IDs agree'], [review, 'need review']]) {
     const d = el('div'); d.append(el('b', String(n)), document.createTextNode(label)); $('stats').append(d);
   }
-  $('footer').textContent = 'Earth Engine charts: January 2018 to October 2026 (partial). Villa area: sampled Sentinel-2 NDVI. Imagery sources and dates appear on each view.';
+  $('footer').textContent = 'Monthly Earth Engine charts: January 2018 to October 2026. Additional Sentinel-1 RTC and Sentinel-2 observations: sampled October acquisitions, 2018–2026. Imagery sources and dates appear on each view.';
   showRecord(P.find(r => r.number === '3189') || P[0]);
-  render();
+  const requestedSite = new URLSearchParams(location.search).get('site') || 'village';
+  renderConstruction(data.construction.projects.find(project => projectSiteKey(project) === requestedSite)?.name || 'Jebel Ali Village');
+  showView('construction');
+  if (location.hash === '#archiveBrowser') $('archiveBrowser').open = true;
   $('loadStatus').hidden = true;
-  if (new URLSearchParams(location.search).get('site') === 'village') {
-    $('site').value = 'village';
-    $('site').onchange();
-    showView('timeline');
-  }
 } catch (e) {
   $('loadStatus').textContent = 'Could not load the demo data: ' + e.message;
   $('loadStatus').className = 'error';

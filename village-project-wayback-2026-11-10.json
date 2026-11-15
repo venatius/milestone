@@ -1,1 +1,92 @@
-{"site": "village", "start": "2021-11-01", "end": "2026-08-17", "start_precision": "month"}
+{
+  "site": "village",
+  "start": "2021-11-01",
+  "end": "2026-08-17",
+  "start_precision": "month",
+  "releases_checked": 64,
+  "dated_responses": 64,
+  "frames": [
+    {
+      "date": "2022-02-25",
+      "release": "2022-08-31",
+      "file": "wayback-village-project-2022-02-25.jpg",
+      "item": "edec6f1fa19a4b5997108349040c4dfc",
+      "url": "https://livingatlas.arcgis.com/wayback/",
+      "provider": "Maxar",
+      "resolution": 0.31,
+      "ring_percent": 4.512259841882651,
+      "view_scale": "wide",
+      "map_resolution_m": 4.3
+    },
+    {
+      "date": "2022-09-21",
+      "release": "2025-01-30",
+      "file": "wayback-village-project-2022-09-21.jpg",
+      "item": "a13ae0015412426bb6d1c24e7654727d",
+      "url": "https://livingatlas.arcgis.com/wayback/",
+      "provider": "Maxar",
+      "resolution": 0.31,
+      "ring_percent": 18.049039367530604
+    },
+    {
+      "date": "2023-02-07",
+      "release": "2023-08-31",
+      "file": "wayback-village-project-2023-02-07.jpg",
+      "item": "c98ec6ff1b26457db28dfa9ca27f144a",
+      "url": "https://livingatlas.arcgis.com/wayback/",
+      "provider": "Maxar",
+      "resolution": 0.31,
+      "ring_percent": 4.512259841882651,
+      "view_scale": "wide",
+      "map_resolution_m": 4.3
+    },
+    {
+      "date": "2024-01-22",
+      "release": "2025-10-23",
+      "file": "wayback-village-project-2024-01-22.jpg",
+      "item": "34ec36c37b23498582355e9ab33b3930",
+      "url": "https://livingatlas.arcgis.com/wayback/",
+      "provider": "Vantor",
+      "resolution": 0.31,
+      "ring_percent": 18.049039367530604
+    },
+    {
+      "date": "2025-03-07",
+      "release": "2025-07-31",
+      "file": "wayback-village-project-2025-03-07.jpg",
+      "item": "07761e30d202426a9fb385b146e546dd",
+      "url": "https://livingatlas.arcgis.com/wayback/",
+      "provider": "Maxar",
+      "resolution": 0.34,
+      "ring_percent": 4.512259841882651,
+      "view_scale": "wide",
+      "map_resolution_m": 4.3
+    },
+    {
+      "date": "2025-05-13",
+      "release": "2026-02-26",
+      "file": "wayback-village-project-2025-05-13.jpg",
+      "item": "146c020d3baa4e67ae0198bbb4f4dee8",
+      "url": "https://livingatlas.arcgis.com/wayback/",
+      "provider": "Vantor",
+      "resolution": 0.34,
+      "ring_percent": 18.049039367530604
+    },
+    {
+      "date": "2025-11-23",
+      "release": "2026-10-29",
+      "file": "wayback-village-project-2025-11-23.jpg",
+      "item": "089e60f6167847f8a14726009c16db66",
+      "url": "https://livingatlas.arcgis.com/wayback/",
+      "provider": "Vantor",
+      "resolution": 0.5,
+      "ring_percent": 18.049039367530604
+    }
+  ],
+  "additional_metadata_layers_checked": [
+    4,
+    5,
+    7,
+    8
+  ]
+}

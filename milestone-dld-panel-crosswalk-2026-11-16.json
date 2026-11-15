@@ -1,0 +1,86 @@
+[
+  {
+    "site": "village",
+    "number": "2285",
+    "project_id": "374736980",
+    "name": "Jebel Ali Village",
+    "status": "FINISHED",
+    "percent": "100",
+    "completion": "2026-04-29",
+    "building_rows": 278,
+    "distinct_parcels": 278,
+    "message": "Jebel Ali Village, DLD project 2285: FINISHED, 100% reported. Registry completion field: 2026-04-29. The 13 Nov Buildings export has 278 matching rows by project ID and 278 distinct non-empty parcel IDs. No boundary geometry supplied."
+  },
+  {
+    "site": "orchid",
+    "number": "1513",
+    "project_id": "12626401",
+    "name": "AZIZI. ORCHID",
+    "status": "FINISHED",
+    "percent": "100",
+    "completion": "2016-11-30",
+    "building_rows": 1,
+    "distinct_parcels": 1,
+    "message": "AZIZI. ORCHID, DLD project 1513: FINISHED, 100% reported. Registry completion field: 2016-11-30. The 13 Nov Buildings export has 1 matching rows by project ID and 1 distinct non-empty parcel IDs. No boundary geometry supplied."
+  },
+  {
+    "site": "verdes",
+    "number": "3189",
+    "project_id": "635640455",
+    "name": "Verdes by Haven 2",
+    "status": "ACTIVE",
+    "percent": "27.49",
+    "completion": "",
+    "building_rows": 1,
+    "distinct_parcels": 1,
+    "message": "Verdes by Haven 2, DLD project 3189: ACTIVE, 27.49% reported. The 13 Nov Buildings export has 1 matching rows by project ID and 1 distinct non-empty parcel IDs. No boundary geometry supplied."
+  },
+  {
+    "site": "frond",
+    "number": "3354",
+    "project_id": "673725648",
+    "name": "Palm Jebel Ali - Frond F",
+    "status": "ACTIVE",
+    "percent": "11.82",
+    "completion": "",
+    "building_rows": 80,
+    "distinct_parcels": 80,
+    "message": "Palm Jebel Ali - Frond F, DLD project 3354: ACTIVE, 11.82% reported. The 13 Nov Buildings export has 80 matching rows by project ID and 80 distinct non-empty parcel IDs. No boundary geometry supplied."
+  },
+  {
+    "site": "frond",
+    "number": "4128",
+    "project_id": "820401834",
+    "name": "Palm Jebel Ali - The Beach and Coral Collection - Frond F",
+    "status": "ACTIVE",
+    "percent": "2.51",
+    "completion": "",
+    "building_rows": 44,
+    "distinct_parcels": 44,
+    "message": "Palm Jebel Ali - The Beach and Coral Collection - Frond F, DLD project 4128: ACTIVE, 2.51% reported. The 13 Nov Buildings export has 44 matching rows by project ID and 44 distinct non-empty parcel IDs. No boundary geometry supplied."
+  },
+  {
+    "site": "como",
+    "number": "2565",
+    "project_id": "476809216",
+    "name": "Como Residences",
+    "status": "ACTIVE",
+    "percent": "24.77",
+    "completion": "",
+    "building_rows": 1,
+    "distinct_parcels": 1,
+    "message": "Como Residences, DLD project 2565: ACTIVE, 24.77% reported. The 13 Nov Buildings export has 1 matching rows by project ID and 1 distinct non-empty parcel IDs. No boundary geometry supplied."
+  },
+  {
+    "site": "naya",
+    "number": "2674",
+    "project_id": "507894403",
+    "name": "Naya at District One",
+    "status": "ACTIVE",
+    "percent": "68.45",
+    "completion": "",
+    "building_rows": 4,
+    "distinct_parcels": 1,
+    "message": "Naya at District One, DLD project 2674: ACTIVE, 68.45% reported. The 13 Nov Buildings export has 4 matching rows by project ID and 1 distinct non-empty parcel IDs. No boundary geometry supplied."
+  }
+]

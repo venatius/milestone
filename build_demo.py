@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import base64
+import html
 import json
 import re
 from datetime import date
@@ -62,6 +63,28 @@ def load_json(name: str):
     if not data:
         raise SystemExit(f"Empty input: {name}")
     return data
+
+
+def wayback_index():
+    """Merge verified dates from the archive sweeps and keep scan coverage."""
+    combined = {}
+    for path in sorted(ROOT.glob("wayback-capture-index-2026-11-15*.json")):
+        for site, scan in load_json(path.name).items():
+            current = combined.setdefault(site, {
+                "centre": scan["centre"], "locationSource": scan["locationSource"],
+                "captures": {}, "checked": 0, "failures": 0,
+            })
+            if current["centre"] != scan["centre"]:
+                raise SystemExit(f"Archive centre mismatch for {site}: {path.name}")
+            if scan["checked"] - scan["failures"] > current["checked"] - current["failures"]:
+                current.update(checked=scan["checked"], failures=scan["failures"])
+            for frame in scan["captures"]:
+                old = current["captures"].get(frame["date"])
+                if not old or (frame["zoom"], frame["release"]) > (old["zoom"], old["release"]):
+                    current["captures"][frame["date"]] = frame
+    for site in combined.values():
+        site["captures"] = sorted(site["captures"].values(), key=lambda frame: frame["date"])
+    return combined
 
 
 def data_uri(name: str) -> str:
@@ -117,7 +140,7 @@ def month_range(first, last):
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--out", default="demo.html")
-    parser.add_argument("--with-local-imagery", action="store_true", help="Include authorised local archive assets")
+    parser.add_argument("--with-local-imagery", action="store_true")
     args = parser.parse_args()
 
     radar, optical = {}, {}
@@ -156,7 +179,7 @@ def main() -> None:
             key=lambda frame: frame["date"],
         )
         dates = [frame["date"] for frame in frames]
-        if (args.with_local_imagery and len(dates) < 2) or len(dates) != len(set(dates)):
+        if args.with_local_imagery and (len(dates) < 2 or len(dates) != len(set(dates))):
             raise SystemExit(f"Missing or duplicate acquisition dates for {site}")
         start = records.get(project, {}).get("start") or None
         mapping[site] = {
@@ -166,16 +189,15 @@ def main() -> None:
             "project": project,
             "registry_start": start,
             "frames": [dict(frame, image=data_uri(frame["file"])) for frame in frames],
-            "weekly": weekly_evidence(site, project, start),
+            "weekly": weekly_evidence(site, project, start) if args.with_local_imagery else {"frames": [], "gaps": []},
         }
     village = load_json("village-project-wayback-2026-11-10.json")
     window = (village["start"], village["end"])
-    village_frames = village["frames"] if args.with_local_imagery else []
-    dates = [frame["date"] for frame in village_frames]
-    if (village["site"] != "village" or (args.with_local_imagery and not dates) or dates != sorted(set(dates))
+    dates = [frame["date"] for frame in village["frames"]]
+    if (village["site"] != "village" or not dates or dates != sorted(set(dates))
             or any(not window[0] <= d <= window[1] for d in dates)):
         raise SystemExit("Invalid Jebel Ali Village project-window imagery")
-    mapping["village"]["frames"] = [dict(frame, image=data_uri(frame["file"])) for frame in village_frames]
+    mapping["village"]["frames"] = [dict(frame, image=data_uri(frame["file"])) for frame in village["frames"]] if args.with_local_imagery else []
     mapping["village"]["window"] = list(window)
 
     manifest = load_json(TIMELINE) if args.with_local_imagery else {"frames": []}
@@ -203,6 +225,8 @@ def main() -> None:
         imagery_months.extend(f["date"][:7] for f in item["frames"] + item["weekly"]["frames"])
         if item["weekly"].get("through"):
             imagery_months.append(item["weekly"]["through"][:7])
+    sampled = load_json("sentinel-panel-sampled-2026-11-16.json")["sites"]
+    village_monthly = load_json("sentinel-village-monthly-2026-11-16.json")["sites"]["village"]
     all_months = reference_months + imagery_months
     payload = {
         "months": list(month_range(min(all_months), max(all_months))),
@@ -211,6 +235,10 @@ def main() -> None:
         "radar": radar,
         "optical": optical,
         "history": history,
+        "construction": load_json("construction-evidence-2026-11-14.json"),
+        "waybackIndex": wayback_index(),
+        "sampled": sampled,
+        "villageMonthly": village_monthly,
     }
 
     template = (ROOT / TEMPLATE).read_text(encoding="utf-8")
@@ -219,7 +247,30 @@ def main() -> None:
     # Escape "</" so the JSON cannot close the <script> tag early.
     blob = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     out = ROOT / args.out
-    out.write_text(template.replace("@@DATA@@", blob), encoding="utf-8")
+    rendered = template.replace("@@DATA@@", blob)
+    crosswalk_path = ROOT / "milestone-dld-panel-crosswalk-2026-11-16.json"
+    if crosswalk_path.is_file():
+        columns = [
+            ("name", "Registry name"), ("number", "Project number"),
+            ("status", "Registry status"), ("percent", "Reported %"),
+            ("completion", "Registry completion date"), ("building_rows", "Building rows"),
+            ("distinct_parcels", "Distinct parcel IDs"),
+        ]
+        records = load_json(crosswalk_path.name)
+        headings = "".join(f"<th>{label}</th>" for _, label in columns)
+        rows = "".join("<tr>" + "".join(
+            f"<td>{html.escape(str(record[key] if record[key] != '' else '—'))}</td>"
+            for key, _ in columns) + "</tr>" for record in records)
+        section = (
+            '<aside id="panel-dld-crosswalk" style="max-width:1200px;margin:20px auto;padding:18px">'
+            '<details><summary>November DLD registry crosswalk</summary>'
+            '<p>Projects snapshot: 1 Nov 2026. Buildings snapshot: 13 Nov 2026. '
+            'Matched on project ID. Building counts do not indicate deliveries, and parcel IDs do not establish boundaries.</p>'
+            f'<div style="overflow:auto"><table><thead><tr>{headings}</tr></thead><tbody>{rows}</tbody></table></div>'
+            '</details></aside>'
+        )
+        rendered = rendered.replace("</body>", section + "</body>")
+    out.write_text(rendered, encoding="utf-8")
 
     print(f"Wrote {out.name} ({out.stat().st_size / 1e6:.1f} MB)")
     print(f"Months: {reference_months[0]} to {reference_months[-1]} ({len(reference_months)})")
