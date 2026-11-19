@@ -225,9 +225,19 @@ def main() -> None:
         imagery_months.extend(f["date"][:7] for f in item["frames"] + item["weekly"]["frames"])
         if item["weekly"].get("through"):
             imagery_months.append(item["weekly"]["through"][:7])
+    refresh = load_json("sentinel-november-refresh-2026-11-20.json")
     sampled = load_json("sentinel-panel-sampled-2026-11-16.json")["sites"]
-    village_monthly = load_json("sentinel-village-monthly-2026-11-16.json")["sites"]["village"]
-    all_months = reference_months + imagery_months
+    village_monthly = load_json("sentinel-village-monthly-2026-11-20.json")["sites"]["village"]
+    observation_months = []
+    for site, observations in refresh.items():
+        destination = village_monthly if site == "village" else sampled.setdefault(
+            site, {"radar": [], "optical": []})
+        for sensor, row in observations.items():
+            if row["site_id"] != site or row["month"] != row["date"][:7]:
+                raise ValueError(f"Inconsistent observation for {site} {sensor}")
+            destination[sensor].append(row)
+            observation_months.append(row["month"])
+    all_months = reference_months + imagery_months + observation_months
     payload = {
         "months": list(month_range(min(all_months), max(all_months))),
         "registry": registry,

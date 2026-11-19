@@ -213,7 +213,13 @@ footer{font-size:12px;color:var(--faint);margin-top:22px}
   .project-visual .toolbar .btns select{min-width:0;width:auto}
   #projectCharts{margin-top:20px}
   #legacyCharts>.insight{margin-bottom:12px}
-  @media(max-width:800px){.project-hero{grid-template-columns:1fr}}
+  .village-chart-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:16px 0}
+  .village-chart{min-width:0;border:1px solid var(--line);border-radius:10px;padding:16px}
+  .village-chart h4{margin:0 0 8px}
+  .village-chart p{margin:8px 0 12px}
+  .village-chart svg{display:block;height:auto}
+  .village-chart svg text{fill:var(--muted,#515b63)}
+  @media(max-width:800px){.project-hero,.village-chart-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -225,7 +231,7 @@ footer{font-size:12px;color:var(--faint);margin-top:22px}
     <button role="tab" data-view="registry" aria-selected="false">Registry</button>
     <button role="tab" data-view="notes" aria-selected="false">Notes</button>
   </nav>
-  <div class="who">Team Origin, CSIT321<br>Data captured 28 Oct 2026</div>
+  <div class="who">Team Origin, CSIT321<br>Satellite data checked 20 Nov 2026</div>
 </header>
 
 <main>
@@ -838,7 +844,7 @@ function playFrames(fromBeginning) {
 function render() {
   const m = months[idx], S = bySite[site];
   $('month').value = idx;
-  $('monthText').replaceChildren(document.createTextNode(monthName(m)), el('small', m === CHART_END ? 'chart data through 27 Oct' : ''));
+  $('monthText').replaceChildren(document.createTextNode(monthName(m)), el('small', m === CHART_END && site !== 'village' ? 'historical series through Oct' : ''));
   renderMapping();
   for (const button of $('contextGrid').querySelectorAll('button[data-month]')) {
     const active = button.dataset.month === m;
@@ -1212,88 +1218,71 @@ function projectSiteKey(project) {
 function addVillageAnalysis(panel) {
   const {radar, optical} = data.villageMonthly;
   const block = el('section', undefined, 'panel');
+  const firstMonth = [radar[0].month, optical[0].month].sort()[0];
+  const lastMonth = [radar.at(-1).month, optical.at(-1).month].sort().at(-1);
   block.append(el('h4', 'Jebel Ali Village · satellite analysis'),
-    el('p', 'One usable scene per month from November 2021 to October 2026. Measurements cover the same approximate 100 m square near the central amenity. The time series describes that area, not the whole community.'));
+    el('p', 'Monthly samples from ' + monthName(firstMonth) + ' to ' + monthName(lastMonth) + '. Measurements cover the same approximate 100 m square near the central amenity. The time series describes that area, not the whole community.'));
   panel.append(block);
-  const bounds = [months.indexOf('2021-11'), months.indexOf('2026-10')];
+  const bounds = [months.indexOf(firstMonth), months.indexOf(lastMonth)];
   const vv = new Map(radar.map(row => [row.month, row]));
-  const ndvi = new Map(optical.map(row => [row.month, row]));
+  const opticalByMonth = new Map(optical.map(row => [row.month, row]));
   const series = (rows, key, label, color) => ({
     values: months.map(month => rows.get(month)?.[key] ?? null),
     dates: new Map([...rows].map(([month, row]) => [month, row.date])), label, color
   });
-  function chartSlot(id, title, help) {
+  const grid = el('div', undefined, 'village-chart-grid');
+  block.append(grid);
+  function chartSlot(parent, id, title, help) {
+    const card = el('section', undefined, 'village-chart');
     const chart = s('svg', {id, viewBox: '0 0 640 212', width: '100%', role: 'img', 'aria-label': title});
-    chart.style.maxWidth = '840px';
-    block.append(el('h4', title), el('p', help, 'sub'), chart);
-    return chart;
+    const description = el('p', help, 'sub');
+    card.append(el('h4', title), description, chart);
+    parent.append(card);
+    return {card, chart, description};
   }
-  chartSlot('village-radar-line', 'Radar backscatter over time (dB)', 'Blue: VV. Brown: VH. Sentinel-1 RTC, descending relative orbit 166.');
+  chartSlot(grid, 'village-radar-line', 'Radar reflection over time (dB)',
+    'Solid blue: VV. Dashed brown: VH. Sentinel-1 radar from the same orbit.');
   drawChart('village-radar-line', [
-    series(vv,'VV_mean','VV','#1f5c8a'), series(vv,'VH_mean','VH','#93541f')
+    series(vv,'VV_mean','VV','#1f5c8a'), {...series(vv,'VH_mean','VH','#93541f'), dash:'5 3'}
   ], {bounds, standalone: true});
-  chartSlot('village-ndvi-line', 'Vegetation index over time (NDVI)', 'Sentinel-2 L2A. Cloud and shadow classes excluded. Gaps indicate missing usable data.');
-  drawChart('village-ndvi-line', [series(ndvi,'NDVI_mean','NDVI','#17695a')], {bounds, standalone: true});
-  chartSlot('village-change-bars','Change in radar VV between consecutive months (dB)', 'Each bar subtracts the previous month’s sampled VV from the current month. A gap appears when either month is missing.');
+
+  const opticalCard = chartSlot(grid, 'village-optical-dots', 'Optical observations',
+    '');
+  const metrics = [
+    ['NDVI_mean', 'Vegetation index (NDVI)', 'Higher values generally indicate greener surfaces.'],
+    ['BSI_mean', 'Bare soil index (BSI)', 'Higher values can indicate more exposed soil.'],
+    ['brightness_mean', 'Visible brightness', 'Higher values indicate a brighter surface in the visible bands.']
+  ];
+  const label = el('label', 'Optical measure ');
+  const select = el('select');
+  for (const [key, title] of metrics) select.add(new Option(title, key));
+  label.append(select);
+  opticalCard.card.insertBefore(label, opticalCard.description);
+  function drawOptical() {
+    const [key, title, help] = metrics.find(([key]) => key === select.value);
+    opticalCard.description.textContent = help + ' Each dot is one cloud-masked Sentinel-2 capture, plotted by month.';
+    opticalCard.chart.setAttribute('aria-label', title + ' by month');
+    drawChart('village-optical-dots', [series(opticalByMonth,key,title,'#17695a')],
+      {bounds, standalone:true, sparse:true});
+  }
+  select.onchange = drawOptical;
+  drawOptical();
+
+  chartSlot(block, 'village-change-bars', 'Month-to-month change in radar VV (dB)',
+    'Bars show how much the radar signal rose or fell since the previous month. Check the imagery for context.');
   const change = months.map((month,i) => {
     const now = vv.get(month)?.VV_mean, before = vv.get(months[i-1])?.VV_mean;
     return num(now) && num(before) ? now-before : null;
   });
-  drawChart('village-change-bars', [{values:change, color:'#17695a'}], {bounds, standalone:true, bars:true, zero:true});
-  const scatter = chartSlot('village-scatter', 'Radar VV (dB) versus vegetation index (NDVI)', 'Each point pairs two acquisitions from the same calendar month. Open the data table for the two capture dates.');
-  const paired = optical.filter(row => vv.has(row.month));
-  if (paired.length) {
-    const xs = paired.map(row => vv.get(row.month).VV_mean), ys = paired.map(row => row.NDVI_mean);
-    const minX = Math.min(...xs), maxX = Math.max(...xs), minY = Math.min(...ys), maxY = Math.max(...ys);
-    scatter.append(s('path', {d:'M46,18 V180 H626',fill:'none',stroke:'#857e6b'}));
-    for (let i=0;i<=4;i++) {
-      const t=i/4;
-      const xLabel=s('text',{x:46+t*580,y:200,'text-anchor':'middle','font-size':12});
-      const yLabel=s('text',{x:40,y:184-t*162,'text-anchor':'end','font-size':12});
-      xLabel.textContent=(minX+t*(maxX-minX)).toFixed(1);
-      yLabel.textContent=(minY+t*(maxY-minY)).toFixed(2);
-      scatter.append(xLabel,yLabel);
-    }
-    paired.forEach((row,i) => {
-      const dot=s('circle',{cx:46+580*(xs[i]-minX)/(maxX-minX||1),cy:180-162*(ys[i]-minY)/(maxY-minY||1),r:4.5,fill:'#17695a',opacity:.8});
-      const tip=s('title',{});
-      tip.textContent=dayName(vv.get(row.month).date)+' radar: '+xs[i].toFixed(2)+' dB · '+dayName(row.date)+' optical: '+ys[i].toFixed(3);
-      dot.append(tip);scatter.append(dot);
-    });
-  } else block.append(el('p','No months have both a valid radar and optical sample.'));
-  const grids = optical.filter(row => row.NDVI_grid);
-  if (grids.length) {
-    const label = el('label','NDVI heatmap capture ');
-    const select = el('select');
-    for (const row of grids) select.append(new Option(dayName(row.date),row.date));
-    select.value=grids.at(-1).date;label.append(select);
-    const heat = s('svg',{id:'village-heatmap',viewBox:'0 0 260 244',width:'260',role:'img','aria-label':'NDVI grid, north at top'});
-    heat.style.maxWidth='100%';
-    const legend = el('p','North is up. Brown: −0.2 or below. Pale: 0.0. Green: +0.4 or above. Gray: masked. The color range is fixed across dates.','sub');
-    const link = el('a','Open Sentinel-2 scene');link.target='_blank';link.rel='noopener';
-    const ramp = [[145,78,43],[247,235,204],[20,103,83]];
-    function paintHeat() {
-      const row = grids.find(item => item.date===select.value);
-      heat.replaceChildren();link.href=row.source;
-      row.NDVI_grid.forEach((line,y)=>line.forEach((v,x)=>{
-        const left = v<0 ? 0 : 1;
-        const t = Math.max(0,Math.min(1,v<0 ? (v+.2)/.2 : v/.4));
-        const fill = num(v) ? 'rgb('+ramp[left].map((n,i)=>Math.round(n+t*(ramp[left+1][i]-n))).join(',')+')' : '#aeb4b3';
-        const cell=s('rect',{x:20+x*22,y:8+y*22,width:21,height:21,fill});
-        const tip=s('title',{});tip.textContent=num(v)?'NDVI '+v.toFixed(3):'Masked';cell.append(tip);heat.append(cell);
-      }));
-    }
-    select.onchange=paintHeat;paintHeat();
-    block.append(el('h4','Optical heatmap · 10 × 10 sampled grid'),label,legend,heat,el('br'),link);
-  }
+  drawChart('village-change-bars', [{values:change}], {bounds, standalone:true, bars:true, zero:true});
   const detail=el('details');
   const table=el('table'), rows=el('tbody');
   const header=el('tr');
-  for (const key of ['Month','Radar date','VV (dB)','VH (dB)','Optical date','NDVI']) header.append(el('th',key));
+  for (const key of ['Month','Radar date','VV (dB)','VH (dB)','Optical date','NDVI','BSI','Brightness']) header.append(el('th',key));
   const head=el('thead');head.append(header);table.append(head,rows);
-  const csvRows=[['month','radar_date','VV_dB','VH_dB','radar_source','optical_date','NDVI','optical_source']];
+  const csvRows=[['month','radar_date','VV_dB','VH_dB','radar_source','optical_date','NDVI','BSI','brightness','optical_source']];
   for (const month of months.slice(bounds[0],bounds[1]+1)) {
-    const r=vv.get(month),o=ndvi.get(month),tr=el('tr');
+    const r=vv.get(month),o=opticalByMonth.get(month),tr=el('tr');
     tr.append(el('td',month));
     function openScene(row) {
       const td=el('td',row ? '' : '—');
@@ -1301,16 +1290,16 @@ function addVillageAnalysis(panel) {
       return td;
     }
     tr.append(openScene(r),el('td',r?.VV_mean.toFixed(3) ?? '—'),el('td',r?.VH_mean.toFixed(3) ?? '—'),
-      openScene(o),el('td',o?.NDVI_mean.toFixed(3) ?? '—'));
+      openScene(o), ...metrics.map(([key]) => el('td', o?.[key]?.toFixed(3) ?? '—')));
     rows.append(tr);
-    csvRows.push([month,r?.date,r?.VV_mean,r?.VH_mean,r?.source,o?.date,o?.NDVI_mean,o?.source]);
+    csvRows.push([month,r?.date,r?.VV_mean,r?.VH_mean,r?.source,o?.date,...metrics.map(([key]) => o?.[key]),o?.source]);
   }
   const csvLink=el('a','Download Village chart data (CSV)');
   csvLink.href='data:text/csv;charset=utf-8,'+encodeURIComponent(csvRows.map(row=>row.join(',')).join('\n'));
   csvLink.download='milestone-jebel-ali-village-sentinel.csv';
   const scroll=el('div');scroll.style.overflow='auto';scroll.append(table);
   detail.append(el('summary','Capture dates, values and scene links'),scroll);
-  block.append(el('p', radar.length+' radar scenes · '+optical.length+' optical scenes · '+paired.length+' paired months'),csvLink,detail);
+  block.append(el('p', radar.length+' radar scenes · '+optical.length+' optical scenes'),csvLink,detail);
 }
 
 function addSampledCharts(panel, siteKey) {
@@ -1318,8 +1307,8 @@ function addSampledCharts(panel, siteKey) {
   if (!sampled) return;
   const block = el('section');
   block.className = 'panel';
-  block.append(el('h4', 'Measured satellite observations · October samples'),
-    el('p', 'One usable acquisition per sensor per year where available. Dots are actual sampled scenes. The approximately 100 m square is centered on the archive map point and does not represent a verified parcel or the entire development.'));
+  block.append(el('h4', 'Measured satellite observations'),
+    el('p', 'Dots show sampled scenes, including the November 2026 refresh. The approximately 100 m square is centered on the archive map point and does not represent a verified parcel or the entire development.'));
   for (const [kind, fields, title] of [
     ['radar', [['VV_mean', 'VV', '#1f5c8a'], ['VH_mean', 'VH', '#93541f']], 'Sentinel-1 RTC radar · VV and VH (dB)'],
     ['optical', [['NDVI_mean', 'NDVI', '#17695a']], 'Sentinel-2 L2A optical · NDVI (unitless)']
@@ -1519,6 +1508,11 @@ function renderConstruction(preferred) {
   const archive = $('archiveBrowser');
   (selected.site ? $('archiveBelow') : $('archiveTop')).append(archive);
   archive.open = !selected.site;
+  const sensorRows = isVillage ? data.villageMonthly : data.sampled[siteKey];
+  if (sensorRows?.radar.length && sensorRows?.optical.length) {
+    panel.append(el('p', 'Latest sampled scenes · radar ' + dayName(sensorRows.radar.at(-1).date) +
+      ' · optical ' + dayName(sensorRows.optical.at(-1).date), 'sub'));
+  }
   if (isVillage) addVillageAnalysis(analysis);
   else addSampledCharts(analysis, siteKey);
   if (selected.events.length) panel.append(el('h4', 'Project evidence'));
