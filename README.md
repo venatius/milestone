@@ -16,7 +16,8 @@ Open [the local demo](http://127.0.0.1:4861/demo.html), or [open Jebel Ali Villa
 ## Prototype
 
 The Figma prototype covers browsing, map and amenities, the Village timeline,
-project comparison, and updates. The team can add its final Figma Present link here.
+project comparison, and updates. 
+(https://www.figma.com/design/E0cxJWhPE9fMSRJM2v79kf/MileStone.?node-id=0-1&t=GwvbJY4YeoBomKh0-1)
 
 ## Data and imagery
 
